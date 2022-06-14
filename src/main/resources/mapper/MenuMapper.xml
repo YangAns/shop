@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yang.mapper.MenuMapper">
+    <!--查询菜单列表-->
+    <select id="findMenuList" resultType="Menu">
+        select * from menu
+    </select>
+    <!--根据角色ID查询该角色拥有的菜单ID集合-->
+    <select id="findMenuIdListByRoleId" resultType="int">
+        select mid from role_menu where rid = #{roleId}
+    </select>
+
+    <!-- 根据菜单编号查询菜单信息 -->
+    <select id="findMenuByMenuId" resultType="Menu">
+        select * from menu where id in
+        <foreach collection="list" item="menuIds" open="(" separator="," close=")">
+            #{menuIds}
+        </foreach>
+    </select>
+
+    <!--根据管理员id查询对应管理的菜单-->
+    <select id="findMenuListByAdminId" resultType="Menu">
+        select distinct t1.* from menu t1
+        inner join role_menu t2 on t2.`mid` = t1.`id`
+        inner join admin_role t3 on t3.`rid` = t2.`rid`
+        where t3.`aid` = #{adminId}
+    </select>
+
+</mapper>

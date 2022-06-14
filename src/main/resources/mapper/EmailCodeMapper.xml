@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yang.mapper.EmailCodeMapper">
+    <select id="findEmailCodeByEmail" resultType="EmailCode">
+        select * from emailcode where email = #{email}
+    </select>
+
+    <insert id="insetEmailCode">
+        insert into emailcode(email,code) values (#{email},#{code})
+    </insert>
+
+    <update id="updateEmailCodeByEmail">
+        update emailcode set code=#{code} where email=#{email}
+    </update>
+</mapper>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yang.mapper.OrderDetailMapper">
+    <resultMap id="ResultMapOrderDetail" type="OrderDetail">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="gid" column="gid" jdbcType="INTEGER"/>
+        <result property="orderId" column="orderId" jdbcType="INTEGER"/>
+        <result property="detailNum" column="detailNum" jdbcType="INTEGER"/>
+        <result property="detailPrice" column="detailPrice" jdbcType="VARCHAR"/>
+        <result property="status" column="status" jdbcType="INTEGER"/>
+        <association property="goods" column="gid" select="com.yang.mapper.GoodsMapper.findGoodsById"/>
+    </resultMap>
+    <!--根据订单号查询订单详情列表-->
+    <select id="findOrderDetailListByOrderId" resultMap="ResultMapOrderDetail">
+        select * from orderdetail where orderId=#{id};
+    </select>
+    <!--添加订单详情-->
+    <insert id="addOrderDetail">
+        insert into orderdetail(gid,orderId,detailNum,detailPrice,status)
+        values (#{gid},#{orderId},#{detailNum},#{detailPrice},#{status})
+    </insert>
+
+    <!--删除订单详情-->
+    <delete id="deleteById">
+        delete from `orderdetail` where orderId = #{orderId}
+    </delete>
+</mapper>

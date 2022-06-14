@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yang.mapper.OrderMapper">
+    <resultMap id="ResultMapOrder" type="Order">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="orderCode" column="orderCode" jdbcType="INTEGER"/>
+        <result property="uid" column="uid" jdbcType="INTEGER"/>
+        <result property="addTime" column="addTime" jdbcType="TIMESTAMP"/>
+        <result property="orderPrice" column="orderPrice" jdbcType="DECIMAL"/>
+        <result property="status" column="status" jdbcType="INTEGER"/>
+        <association property="user" column="uid" select="com.yang.mapper.UserMapper.findUserById"/>
+        <collection property="orderDetailList" column="id" ofType="OrderDetail" select="com.yang.mapper.OrderDetailMapper.findOrderDetailListByOrderId"/>
+    </resultMap>
+
+    <!--查询所有订单列表-->
+    <select id="findOrderLIst" resultMap="ResultMapOrder">
+        select * from `order`
+        <where>
+            <if test="orderCode!=null and orderCode!=''">
+                and orderCode like concat('%',#{orderCode},'%')
+            </if>
+            <if test="status!=null">
+                and status like concat('%',#{status},'%')
+            </if>
+            <if test="startDate!=null">
+                <![CDATA[ and addTime >= #{startDate} ]]>
+            </if>
+            <if test="endDate!=null">
+                <![CDATA[ and addTime <= #{endDate} ]]>
+            </if>
+            and status is not null
+        </where>
+        order by addTime desc
+    </select>
+
+    <!--添加订单-->
+    <insert id="addOrder" useGeneratedKeys="true" keyProperty="id">
+        insert into `order`(id,orderCode,uid,addTime,orderPrice,status)
+        values (#{id},#{orderCode},#{uid},#{addTime},#{orderPrice},#{status})
+    </insert>
+
+    <!--删除订单-->
+    <delete id="deleteById">
+        delete from `order` where id = #{id}
+    </delete>
+
+    <!--根据用户查询所有订单信息-->
+    <select id="findOrderListByUid" resultMap="ResultMapOrder">
+        select * from `order` where uid = #{uid} and status is not null order by id desc;
+    </select>
+
+    <!--查询用户待付款订单-->
+    <select id="findDfkOrderListByUid" resultMap="ResultMapOrder">
+        select * from `order` where uid = #{uid} and status=0 order by id desc;
+    </select>
+
+    <!--查询用户待发货订单-->
+    <select id="findDfhOrderListByUid" resultMap="ResultMapOrder">
+        select * from `order` where uid = #{uid} and status=1 order by id desc;
+    </select>
+
+    <!--查询用户待收货订单-->
+    <select id="findDshOrderListByUid" resultMap="ResultMapOrder">
+        select * from `order` where uid = #{uid} and status=2 order by id desc;
+    </select>
+
+    <!--查询用户已收货订单-->
+    <select id="findYshOrderListByUid" resultMap="ResultMapOrder">
+        select * from `order` where uid = #{uid} and status=3 order by id desc;
+    </select>
+
+    <!--后台管理员发货-->
+    <update id="deliverOrder">
+        update `order` set status=2 where id=#{id}
+    </update>
+
+    <!--前台用户确认收货-->
+    <update id="confirmReceipt">
+        update `order` set status=3 where id=#{id}
+    </update>
+
+    <!--前台用户取消订单-->
+    <update id="cancelOrder">
+        update `order` set status=-1 where id=#{id}
+    </update>
+
+    <!--前台用户完成评价-->
+    <update id="finishOrder">
+        update `order` set status=4 where id=#{id}
+    </update>
+
+    <!--修改订单状态-->
+    <update id="updateStatus">
+        update `order` set status=#{status} where id=#{id}
+    </update>
+
+    <!--查询总订单数量-->
+    <select id="findTotalOrder" resultType="int">
+        select count(*) num from `order`
+    </select>
+
+
+    <!--查询待发货订单数量-->
+    <select id="findTotalDeliverOrder" resultType="int">
+        select count(*) num from `order`where `status` = 1
+    </select>
+    <select id="findOrderById" resultType="com.yang.bean.Order">
+        select * from `order` where id = #{orderId}
+    </select>
+    <select id="findOrderByOrderCode" resultType="com.yang.bean.Order">
+        select * from `order` where orderCode = #{orderCode}
+    </select>
+    <select id="findStatusIsNull" resultType="java.lang.Integer">
+        select id from `order` where `status` is null
+    </select>
+</mapper>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yang.mapper.CollectMapper">
+    <resultMap id="resultCollectMap" type="Collect">
+        <id property="id" column="id"/>
+        <result property="gid" column="gid"/>
+        <result property="uid" column="uid"/>
+        <association property="goods" column="gid" javaType="Goods" select="com.yang.mapper.GoodsMapper.findGoodsByIdEva"/>
+    </resultMap>
+
+    <!--根据用户查询收藏列表-->
+    <select id="findCollectListByUid"  resultMap="resultCollectMap">
+        select * from collect where uid = #{uid} order by id desc
+    </select>
+
+    <!--用户添加收藏-->
+    <insert id="addCollect">
+        insert into collect(gid,uid)
+        values (#{gid},#{uid})
+    </insert>
+
+    <!--用户取消收藏-->
+    <delete id="deleteById">
+        delete from collect where id = #{id}
+    </delete>
+
+    <!-- 判断该商品是否已经收藏过了   -->
+    <select id="findCollectByUidGid" resultType="collect">
+        select * from `collect` where uid=#{uid} and gid=#{gid}
+    </select>
+</mapper>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yang.mapper.GoodsMapper">
+
+    <resultMap id="ResultMapGoods" type="com.yang.bean.Goods">
+        <result column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="price" property="price"/>
+        <result column="pic" property="pic"/>
+        <result column="typeIdOne" property="typeIdOne"/>
+        <result column="typeIdTwo" property="typeIdTwo"/>
+        <result column="collectNum" property="collectNum"/>
+        <result column="buyNum" property="buyNum"/>
+        <result column="discount" property="discount"/>
+        <result column="details" property="details"/>
+        <!--复杂的属性 对象：association 集合：collection-->
+        <association property="typeOne" column="typeIdOne" javaType="com.yang.bean.GoodsType" select="getType"/>
+        <association property="typeTwo" column="typeIdTwo" javaType="com.yang.bean.GoodsType" select="getType"/>
+        <collection property="evaluateList" column="id" ofType="com.yang.bean.Evaluate" select="com.yang.mapper.EvaluateMapper.listEvaluateByGid"/>
+    </resultMap>
+    <!--查询所有商品-->
+    <select id="findGoodsList" resultMap="ResultMapGoods">
+        select * from goods
+        <where>
+            <if test="name!=null and name!=''">
+                and `name` like concat('%',#{name},'%')
+            </if>
+            <if test="typeIdOne!=null">
+                and typeIdOne like concat('%',#{typeIdOne},'%')
+            </if>
+        </where>
+    </select>
+    <select id="getType" resultType="com.yang.bean.GoodsType">
+        select * from goods_type where id=#{id}
+    </select>
+
+    <!--添加商品-->
+    <insert id="addGoods">
+        insert into goods(`name`,price,num,pic,typeIdOne,typeIdTwo,collectNum,buyNum,discount,details,addTime)
+        values(#{name},#{price},#{num},#{pic},#{typeIdOne},#{typeIdTwo},#{collectNum},#{buyNum},#{discount},#{details},#{addTime})
+    </insert>
+
+    <!--修改商品-->
+    <update id="updateGoods">
+        update goods
+        <set>
+            <if test="name!=null and name!=''">
+                name=#{name},
+            </if>
+            <if test="price!=null">
+                price=#{price},
+            </if>
+            <if test="num!=null">
+                num=#{num},
+            </if>
+            <if test="pic!=null and pic!=''">
+                pic=#{pic},
+            </if>
+            <if test="typeIdOne!=null">
+                typeIdOne=#{typeIdOne},
+            </if>
+            <if test="typeIdTwo!=null">
+                typeIdTwo=#{typeIdTwo},
+            </if>
+            <if test="collectNum!=null">
+                collectNum=#{collectNum},
+            </if>
+            <if test="buyNum!=null">
+                buyNum=#{buyNum},
+            </if>
+            <if test="discount!=null">
+                discount=#{discount},
+            </if>
+            <if test="details!=null and details!=''">
+                details=#{details},
+            </if>
+            <if test="addTime!=null">
+                addTime=#{addTime}
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--删除商品-->
+    <delete id="deleteById">
+        delete from goods where id=#{id}
+    </delete>
+
+
+
+    <!--查询所有热门商品-->
+    <select id="findHotGoodsList" resultMap="ResultMapGoods">
+        select * from goods
+        order by buyNum desc limit 0,10
+    </select>
+
+    <!--查询最新上架的商品-->
+    <select id="findNewGoodsList" resultMap="ResultMapGoods">
+        select * from goods
+        order by addTime desc limit 0,10
+    </select>
+
+    <!--前台商品模糊查询-->
+    <select id="findFrontGoods" resultMap="ResultMapGoods">
+        select * from goods
+        <where>
+            <if test="typeIdTwo!=null">
+                and `typeIdTwo`= #{typeIdTwo}
+            </if>
+            <if test="name!=null and name!=''">
+                and `name` like concat('%',#{name},'%')
+            </if>
+
+
+            <if test="price!=null and price!=0.0">
+                order  by price desc
+            </if>
+            <if test="buyNum!=null">
+                order  by buyNum desc
+            </if>
+        </where>
+    </select>
+
+    <!--根据id查询一条商品-->
+    <select id="findGoodsById" resultMap="ResultMapGoods">
+        select * from goods where id = #{id}
+    </select>
+
+    <!--根据id查询一条商品  供评论列表展示-->
+    <select id="findGoodsByIdEva" resultType="Goods">
+        select * from goods where id = #{id}
+    </select>
+
+    <!--根据销量排序查询商品信息-->
+    <select id="findGoodsByBuyNum" resultMap="ResultMapGoods">
+       select * from goods where buyNum>0 order by buyNum desc
+    </select>
+
+    <!--查询总商品数量-->
+    <select id="findTotalGoods" resultType="int">
+        select count(1) num from `goods`
+    </select>
+
+</mapper>

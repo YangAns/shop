@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yang.mapper.GoodsTypeMapper">
+    <!--查询一级分类-->
+    <select id="findGoodsTypeList" resultType="GoodsType">
+        select * from goods_type
+        <where>
+            pid is null
+            <if test="typeName!=null and typeName!=''">
+                and typeName like concat('%',#{typeName},'%')
+            </if>
+            order by id
+        </where>
+    </select>
+
+    <!--根据pid查询一条二级分类-->
+    <select id="findGoodsTypeTwoById" resultType="GoodsType" parameterType="com.yang.vo.GoodsTypeVo">
+        select * from goods_type
+        <where>
+            pid = #{pid}
+            <if test="typeName!=null and typeName!=''">
+                and typeName like concat('%',#{typeName},'%')
+            </if>
+            order by id
+        </where>
+    </select>
+
+    <!--根据id查询一条分类-->
+    <select id="findGoodsTypeById" resultType="GoodsType">
+        select * from goods_type where id=#{id}
+    </select>
+
+    <!--查询所有二级分类-->
+    <select id="findGoodsTypeTwoAll" resultType="GoodsType">
+        select * from goods_type where pid is not null
+    </select>
+
+
+    <!--新增类型-->
+    <insert id="addGoodsType">
+        insert into goods_type(pid,typeName)
+        values (#{pid},#{typeName})
+    </insert>
+
+    <!--修改类型-->
+    <update id="updateGoodsType">
+        update goods_type
+        <set>
+            <if test="pid!=null">
+                pid = #{pid},
+            </if>
+            <if test="typeName!=null and typeName!=''">
+                typeName = #{typeName},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+    <!--删除一级分类-->
+    <delete id="deleteById">
+        delete from goods_type where id = #{id}
+    </delete>
+
+    <!--删除二级分类-->
+    <!--当删除一级分类时同时删除二级分类-->
+    <delete id="deleteById2">
+        delete from goods_type where pid = #{id}
+    </delete>
+</mapper>

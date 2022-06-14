@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yang.mapper.CartMapper">
+    <resultMap id="ResultMapCart" type="Cart">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="gid" column="gid" jdbcType="INTEGER"/>
+        <result property="uid" column="uid" jdbcType="INTEGER"/>
+        <result property="num" column="num" jdbcType="INTEGER"/>
+        <result property="price" column="price" jdbcType="DECIMAL"/>
+        <result property="totalPrice" column="totalPrice" jdbcType="DECIMAL"/>
+        <association property="goods" column="gid" select="com.yang.mapper.GoodsMapper.findGoodsById"/>
+    </resultMap>
+    <!--根据用户查询所有购物车内商品-->
+    <select id="findCartListByUserId" resultMap="ResultMapCart">
+        select * from cart where uid = #{uid}
+    </select>
+    <!--添加购物车-->
+    <insert id="addCart">
+        insert into cart(gid,uid,num,price,totalPrice)
+        values (#{gid},#{uid},#{num},#{price},#{totalPrice})
+    </insert>
+    <!--删除购物车-->
+    <delete id="deleteById">
+        delete from cart where id=#{id}
+    </delete>
+    <!--根据商品id删除购物车-->
+    <delete id="deleteByGId">
+        delete from cart where gid=#{gid}
+    </delete>
+
+    <!--根据id查询购物车-->
+    <select id="findCartById" resultType="Cart">
+        select * from cart where id=#{id};
+    </select>
+
+    <!--根据商品id查询购物车数据-->
+    <select id="findCartByGidUid" resultType="Cart">
+        select * from cart where gid = #{gid} and uid = #{uid}
+    </select>
+
+    <!--根据修改购物车数据-->
+    <update id="updateCart">
+        update cart
+        <set>
+            <if test="gid!=null">
+                gid = #{gid},
+            </if>
+            <if test="uid!=null">
+                uid = #{uid},
+            </if>
+            <if test="num!=null">
+                num = #{num},
+            </if>
+            <if test="price!=null">
+                price = #{price},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+</mapper>

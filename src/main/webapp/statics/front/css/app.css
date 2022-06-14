@@ -1,0 +1,3741 @@
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block
+}
+
+li {
+    list-style: none
+}
+
+::-ms-clear, ::-ms-reveal {
+    display: none
+}
+
+.mt-1 {
+    margin-top: -1px
+}
+
+.mt-2 {
+    margin-top: -2px
+}
+
+.mt-3 {
+    margin-top: -3px
+}
+
+.mt5 {
+    margin-top: 5px
+}
+
+.mt10 {
+    margin-top: 10px
+}
+
+.mt20 {
+    margin-top: 20px
+}
+
+.mt30 {
+    margin-top: 30px
+}
+
+.mr5 {
+    margin-right: 5px
+}
+
+.mr10 {
+    margin-right: 10px
+}
+
+.mr20 {
+    margin-right: 20px
+}
+
+.mb5 {
+    margin-bottom: 5px
+}
+
+.mb10 {
+    margin-bottom: 10px
+}
+
+.ml5 {
+    margin-left: 5px
+}
+
+.ml10 {
+    margin-left: 10px
+}
+
+.ml20 {
+    margin-left: 20px
+}
+
+.mb20 {
+    margin-bottom: 20px
+}
+
+.mb30 {
+    margin-bottom: 30px
+}
+
+.mt50 {
+    margin-top: 50px
+}
+
+.pt5 {
+    padding-top: 5px
+}
+
+.pt10 {
+    padding-top: 10px
+}
+
+.pr5 {
+    padding-right: 5px
+}
+
+.pr10 {
+    padding-right: 10px
+}
+
+.pb5 {
+    padding-bottom: 5px
+}
+
+.pb10 {
+    padding-bottom: 10px
+}
+
+.pl5 {
+    padding-left: 5px
+}
+
+.pl10 {
+    padding-left: 10px
+}
+
+:focus {
+    outline: 0
+}
+
+.wrap-700 {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.ftx-primary {
+    color: #333
+}
+
+.alink {
+    color: #007edf;
+    text-decoration: none;
+    cursor: pointer
+}
+
+.ac {
+    text-align: center
+}
+
+.hide {
+    display: none
+}
+
+.clear, .clr {
+    overflow: hidden;
+    line-height: 0;
+    font-size: 0
+}
+
+.clear, .clearfix:after, .clr {
+    display: block;
+    clear: both;
+    height: 0
+}
+
+.clearfix:after {
+    content: ".";
+    visibility: hidden
+}
+
+.clearfix {
+    *zoom: 1
+}
+
+#app {
+    position: relative;
+    z-index: 10;
+    min-height: 700px
+}
+
+.w {
+    width: 1210px;
+    margin: 0 auto
+}
+
+.iconfont {
+    font-size: unset
+}
+
+.header {
+    height: 110px;
+    background: url(//misc.360buyimg.com/user/reg/3.0.0/css/i/headbg.jpg) repeat-x 0 100%
+}
+
+.header .logo {
+    width: 160px;
+    background: url(//misc.360buyimg.com/user/reg/3.0.0/css/i/icon.png) no-repeat
+}
+
+.header .logo, .header .logo-en {
+    height: 50px;
+    float: left;
+    margin-top: 24px;
+    line-height: 99em;
+    overflow: hidden
+}
+
+.header .logo-en {
+    background: url(https://passport.jd.com/new/misc/shopify/images/logo.png) no-repeat;
+    width: 180px
+}
+
+.header .logo-title {
+    float: left;
+    height: 34px;
+    line-height: 34px;
+    font-size: 24px;
+    color: #333;
+    margin-top: 34px
+}
+
+.footer {
+    font-size: 12px;
+    text-align: center;
+    border-top: 1px solid #e6e6e6;
+    color: #999;
+    padding-bottom: 30px
+}
+
+.footer .links {
+    padding-top: 30px;
+    padding-bottom: 15px
+}
+
+.footer p {
+    color: #bbb
+}
+
+.footer a {
+    color: #999;
+    margin: 0 10px
+}
+
+.footer a:hover {
+    text-decoration: underline
+}
+
+.btn-def {
+    display: inline-block;
+    border: 1px solid #ccc;
+    color: #666;
+    font-size: 14px;
+    text-decoration: none;
+    background: #fff
+}
+
+.btn-def:hover {
+    border-color: #666;
+    color: #333
+}
+
+.btn-primary {
+    display: inline-block;
+    border: 1px solid #e2231a;
+    background: #e2231a;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer
+}
+
+.btn-primary:hover {
+    background: #c81623;
+    border-color: #c81623;
+    color: #fff
+}
+
+.btn-primary.disable {
+    background: #c81623;
+    border-color: #c81623;
+    opacity: .5;
+    cursor: not-allowed
+}
+
+.btn-disabled {
+    background: #f6f6f6;
+    border: 1px solid #f6f6f6;
+    cursor: not-allowed
+}
+
+.btn-disabled:hover {
+    border: 1px solid #ccc;
+    color: #666
+}
+
+.btn-m {
+    width: 98px;
+    height: 38px;
+    line-height: 38px
+}
+
+.btn-l {
+    width: 332px
+}
+
+.btn-l, .btn-xl {
+    height: 50px;
+    line-height: 50px;
+    text-align: center
+}
+
+.btn-xl {
+    width: 400px
+}
+
+.auth-main {
+    padding: 100px 0 10px
+}
+
+.m-tip1 {
+    width: 402px;
+    margin: 0 auto
+}
+
+.m-tip1 .tip-icon {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    font-size: 80px;
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    color: #f82
+}
+
+.m-tip1 .tip-icon:before {
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.m-tip1 .icon-tip {
+    color: #f82
+}
+
+.m-tip1 .icon-done {
+    color: #3b4
+}
+
+.m-tip1 .auth-ico {
+    display: block;
+    width: 70px;
+    height: 76px;
+    margin-bottom: 30px;
+    background: url(//misc.360buyimg.com/user/myjd/safe/auth/rubik/css/i/auth-ico.png) no-repeat
+}
+
+.m-tip1 .tip-title {
+    margin: 0 auto 20px;
+    font: 14px/22px Microsoft YaHei;
+    color: #666
+}
+
+.m-tip1 .tip-hint {
+    margin: 0 0 20px;
+    font-size: 14px;
+    color: #666
+}
+
+.m-tip1 .tip-other {
+    font-size: 14px;
+    color: #666;
+    text-align: left
+}
+
+.m-tip1 .tip-other a {
+    text-decoration: none
+}
+
+.m-tip1 .tip-other-ac {
+    text-align: center
+}
+
+.m-tip1 .tip-btnbox .btn-def {
+    color: #333;
+    font-size: 18px
+}
+
+.auth-mini-tip {
+    display: inline-block;
+    line-break: 30px;
+    font-size: 14px;
+    padding: 10px 20px;
+    color: #fff;
+    background: rgba(0, 0, 0, .5)
+}
+
+.auth-mini-tip .icon-tip {
+    margin-right: 5px
+}
+
+.form-wrap {
+    width: 402px;
+    margin: 0 auto;
+    font: 12px/18px Microsoft YaHei
+}
+
+.form-wrap .form-title {
+    margin-bottom: 15px;
+    text-align: center;
+    font: 700 16px/30px Microsoft YaHei
+}
+
+.form-wrap .form-title .tit-ico {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 40px auto 10px;
+    background: #ccc;
+    color: #fff;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px
+}
+
+.form-wrap .form-title .icon-bankcard {
+    display: block;
+    background: url(//misc.360buyimg.com/user/myjd/safe/auth/rubik/css/i/bank-ico.png) #ccc 50% no-repeat
+}
+
+.form-wrap .form-title .icon-bankcard:before {
+    content: ""
+}
+
+.form-wrap .form-title .icon-shangjia {
+    display: block;
+    background: url(//misc.360buyimg.com/user/myjd/safe/auth/rubik/2.0.0/css/i/shangjia-ico.png) #ccc 50% no-repeat
+}
+
+.form-wrap .form-title .icon-shangjia:before {
+    content: ""
+}
+
+.form-wrap .form-title .icon-hisname {
+    display: block;
+    background: url(//misc.360buyimg.com/user/myjd/safe/auth/rubik/2.0.34/css/i/hisname-ico.png) #ccc 50% no-repeat
+}
+
+.form-wrap .form-title .icon-hisname:before {
+    content: ""
+}
+
+.form-wrap .form-title .icon-cardid {
+    width: 48px;
+    height: 48px;
+    display: block;
+    background: url(//misc.360buyimg.com/user/myjd/safe/auth/rubik/2.0.34/css/i/cardid-ico.png) #ccc 50% no-repeat
+}
+
+.form-wrap .form-title .icon-cardid:before {
+    content: ""
+}
+
+.form-wrap .form-title .hint {
+    font-size: 12px;
+    color: #666
+}
+
+.form-wrap .sub-title {
+    margin-top: 5px;
+    font-family: Microsoft YaHei;
+    font-size: 12px;
+    color: #999;
+    letter-spacing: 0;
+    line-height: 18px;
+    text-align: center
+}
+
+.form-wrap .form-title-left {
+    text-align: left
+}
+
+.form-wrap .form-item {
+    min-width: 400px;
+    min-height: 62px;
+    margin-bottom: 15px
+}
+
+.form-wrap .form-item .select-country {
+    float: left;
+    width: 110px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #333;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    cursor: pointer
+}
+
+.form-wrap .form-item .select-country .txt {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden
+}
+
+.form-wrap .form-item .select-country .num {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.form-wrap .form-item .select-country .arrow {
+    display: inline-block;
+    margin: 24px 0 0 3px;
+    vertical-align: top;
+    width: 10px;
+    height: 5px;
+    background: url(//misc.360buyimg.com/user/myjd/safe/auth/rubik/css/i/arrow.png) no-repeat;
+    overflow: hidden
+}
+
+.form-wrap .form-item .item-input-wrap {
+    position: relative;
+    float: left;
+    width: 193px;
+    height: 50px;
+    margin-left: -1px;
+    border: 1px solid #ddd
+}
+
+.form-wrap .form-item .item-input-cardwrap {
+    z-index: 10
+}
+
+.form-wrap .form-item .i-ops {
+    position: absolute;
+    z-index: 10;
+    height: 50px;
+    line-height: 50px;
+    right: 0;
+    text-align: right
+}
+
+.form-wrap .form-item .i-status {
+    display: none
+}
+
+.form-wrap .form-item .icon-biyan, .form-wrap .form-item .icon-delete, .form-wrap .form-item .icon-yanjing {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 14px;
+    width: 23px;
+    color: #b0b0b0;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer
+}
+
+.form-wrap .form-item .icon-biyan {
+    font-size: 12px
+}
+
+.form-wrap .form-item .place-holder {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    height: 20px;
+    line-height: 20px;
+    color: #ccc;
+    font-family: Microsoft YaHei
+}
+
+.form-wrap .form-item .field {
+    position: relative;
+    border: 0;
+    font-size: 14px;
+    z-index: 2;
+    /*width: 144px;*/
+    height: 20px;
+    line-height: 20px;
+    padding: 26px 0 15px 15px;
+    text-align: left;
+    background: transparent;
+    font-family: Microsoft YaHei
+}
+
+.form-wrap .form-item .item-rcol {
+    display: inline-block;
+    display: block
+}
+
+.form-wrap .form-item .item-rcol:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+* html .form-wrap .form-item .item-rcol {
+    height: 1%
+}
+
+* + html .form-wrap .form-item .item-rcol {
+    min-height: 1%
+}
+
+.form-wrap .form-item ::-webkit-input-placeholder {
+    color: #ccc;
+    font-family: Microsoft YaHei
+}
+
+.form-wrap .form-item :-moz-placeholder, .form-wrap .form-item ::-moz-placeholder {
+    color: #ccc;
+    font-family: Microsoft YaHei
+}
+
+.form-wrap .form-item :-ms-input-placeholder {
+    color: #ccc;
+    font-family: Microsoft YaHei
+}
+
+.form-wrap .form-item .icon-done {
+    margin-right: 15px;
+    color: #3b4
+}
+
+.form-wrap .form-item .input-tips {
+    clear: both;
+    min-height: 24px
+}
+
+.form-wrap .form-item .input-defaulttip {
+    padding: 5px 0;
+    font-size: 12px;
+    color: #999
+}
+
+.form-wrap .form-item .input-defaulttip .icon-warn {
+    font-size: 16px;
+    margin-right: 4px
+}
+
+.form-wrap .form-item .input-error {
+    clear: both;
+    padding: 5px 0 0;
+    color: #f83
+}
+
+.form-wrap .form-item .input-error .icon-warn {
+    font-size: 16px;
+    margin-right: 4px
+}
+
+.form-wrap .form-item .item-input-w2 {
+    width: 158px
+}
+
+.form-wrap .form-item .item-input-w2 .field {
+    width: 100px
+}
+
+.form-wrap .form-item .item-input-w3 {
+    width: 330px
+}
+
+.form-wrap .form-item .item-input-w3 .field {
+    width: 238px
+}
+
+.form-wrap .form-item .item-input-xl {
+    width: 398px
+}
+
+.form-wrap .form-item .item-input-xl .field {
+    width: 306px
+}
+
+.form-wrap .form-item .item-input-w4 {
+    width: 285px
+}
+
+.form-wrap .form-item .item-input-w4 .field {
+    width: 193px
+}
+
+.form-wrap .form-item .mix-btns {
+    float: left;
+    position: relative;
+    width: 195px;
+    height: 52px;
+    font-size: 0;
+    overflow: hidden
+}
+
+.form-wrap .form-item .mix-btns .btn-def {
+    position: absolute;
+    top: 0;
+    height: 52px;
+    line-height: 52px;
+    overflow: hidden;
+    font-size: 12px;
+    transition: width .1s linear
+}
+
+.form-wrap .form-item .mix-btns .btn-disabled em {
+    color: #333;
+    margin-right: 3px
+}
+
+.form-wrap .form-item .mix-btns .disable {
+    cursor: not-allowed
+}
+
+.form-wrap .form-item .mix-btns .icon {
+    margin: 0 10px;
+    font-size: 12px
+}
+
+.form-wrap .form-item .mix-btns .btn-l {
+    z-index: 2;
+    width: 151px;
+    /*box-shadow: 0 0 30px rgba(0, 0, 0, .4)*/
+}
+
+.form-wrap .form-item .mix-btns .btn-xl {
+    width: 193px
+}
+
+.form-wrap .form-item .mix-btns .btn-xs {
+    width: 46px;
+    background: #f6f6f6
+}
+
+.form-wrap .form-item .mix-btns .btn-xs .icon {
+    display: block;
+    margin: 0
+}
+
+.form-wrap .form-item .mix-btns .btn-msg {
+    left: 0;
+    color: #333
+}
+
+.form-wrap .form-item .mix-btns .btn-msg:hover {
+    position: relative;
+    z-index: 3
+}
+
+.form-wrap .form-item .mix-btns .btn-msg:hover .icon-duanxin:before {
+    content: "\e624"
+}
+
+.form-wrap .form-item .mix-btns .btn-voice {
+    right: 0
+}
+
+.form-wrap .form-item .mix-btns .btn-voice:hover {
+    z-index: 3
+}
+
+.form-wrap .form-item .mix-btns .btn-voice:hover .icon-dianhua:before {
+    content: "\e623"
+}
+
+.form-wrap .form-item .mix-btns .btn-voice:active {
+    color: #999
+}
+
+.form-wrap .form-item .v-cont {
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 100%;
+    font-size: 14px;
+    text-align: left
+}
+
+.form-wrap .form-item .v-cont .v-txt {
+    position: relative;
+    height: 50px;
+    padding: 0 58px 0 20px;
+    line-height: 50px;
+    color: #000
+}
+
+.form-wrap .form-item .v-cont .v-txt:after {
+    position: absolute;
+    display: block;
+    width: 13px;
+    height: 8px;
+    right: 20px;
+    top: 23px;
+    content: "";
+    background: url(//misc.360buyimg.com/user/myjd/safe/auth/rubik/css/i/bank-arrow.png)
+}
+
+.form-wrap .form-item .v-cont .v-list {
+    position: absolute;
+    top: 50px;
+    left: -1px;
+    display: none;
+    width: 100%;
+    line-height: 60px;
+    background: #fff;
+    border: 1px solid #666;
+    border-top: 0
+}
+
+.form-wrap .form-item .v-cont .v-list .scrollarea {
+    max-height: 300px
+}
+
+.form-wrap .form-item .v-cont .v-list li {
+    padding: 0 20px;
+    cursor: pointer;
+    border-top: 1px solid #ccc
+}
+
+.form-wrap .form-item .v-cont-up .v-txt:after {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+
+.form-wrap .form-item .v-cont-up .v-list {
+    display: block
+}
+
+.form-wrap .form-item-xl {
+    width: 400px
+}
+
+.form-wrap .z-focus .item-input-wrap {
+    border-color: #666
+}
+
+.form-wrap .z-error .item-input-wrap {
+    border-color: #f83
+}
+
+.form-wrap .form-phone-item {
+    position: relative
+}
+
+.form-wrap .form-phone-item .picker-box {
+    position: absolute;
+    left: 0;
+    top: 50px
+}
+
+.form-wrap .form-item-txt {
+    font-family: Microsoft YaHei;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+    letter-spacing: -.22px;
+    text-align: left;
+    margin-bottom: 8px
+}
+
+#country_code_layer {
+    font-family: Microsoft YaHei;
+    background-color: #fff;
+    position: absolute;
+    cursor: default;
+    z-index: 110;
+    box-shadow: 0 0 2px 2px #eee;
+    border: 1px solid #eee;
+    padding: 10px 14px;
+    width: 368px;
+    font-size: 14px;
+    height: auto
+}
+
+#country_code_layer a {
+    text-decoration: none
+}
+
+#country_code_layer .close-button {
+    right: 4px;
+    top: 5px;
+    position: absolute;
+    background: url(//misc.360buyimg.com/user/myjd/safe/auth/rubik/css/i/close-button.png) no-repeat;
+    width: 17px;
+    height: 17px
+}
+
+#country_code_layer .arrow {
+    display: block;
+    position: absolute;
+    background-image: url(//misc.360buyimg.com/user/myjd/safe/auth/rubik/css/i/tips.gif);
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 9px;
+    background-position: 0 0;
+    overflow: hidden;
+    top: -9px;
+    right: 330px
+}
+
+#country_code_layer a:hover {
+    color: #c81623
+}
+
+#country_code_layer .search-bar {
+    width: auto;
+    height: auto;
+    position: relative;
+    background: #f7f7f7;
+    margin-bottom: 12px
+}
+
+#country_code_layer .search-bar input {
+    display: inline-block;
+    *display: inline;
+    width: 324px;
+    height: 38px;
+    line-height: 38px;
+    background: #f7f7f7;
+    border: 1px solid #eee;
+    padding-left: 42px
+}
+
+#country_code_layer .search-bar .search-icon {
+    display: inline-block;
+    width: 17px;
+    height: 16px;
+    background: url(//misc.360buyimg.com/user/myjd/safe/auth/rubik/css/i/search-icon.png) no-repeat;
+    position: absolute;
+    left: 17px;
+    top: 13px
+}
+
+#country_code_layer .capital-list {
+    width: 382px;
+    line-height: 20px;
+    word-break: break-all;
+    font-size: 14px
+}
+
+#country_code_layer .capital-list span {
+    display: inline-block;
+    *display: inline;
+    margin-right: 10px;
+    cursor: pointer
+}
+
+#country_code_layer .capital-list .curr {
+    color: #e4393c
+}
+
+#country_code_layer .current-capital span {
+    display: inline-block
+}
+
+#country_code_layer .current-capital .line {
+    width: 289px;
+    height: 1px;
+    margin-left: 12px;
+    background: #eee;
+    vertical-align: middle
+}
+
+#country_code_layer .country-list {
+    height: 160px;
+    width: 100%;
+    font-size: 14px
+}
+
+#country_code_layer .country-list .overview {
+    width: 100%;
+    height: 150px;
+    padding-left: 5px
+}
+
+#country_code_layer .country-list .overview .scrollbar-container, #country_code_layer .country-list .overview .scrollbar-container.active, #country_code_layer .country-list .overview .scrollbar-container:hover {
+    background: #dcdcdc
+}
+
+#country_code_layer .country-list .overview .scrollbar-container.vertical .scrollbar {
+    background: #333;
+    border-radius: 4px
+}
+
+#country_code_layer .country-list ul li {
+    float: left;
+    width: 95%;
+    cursor: pointer;
+    margin-bottom: 14px
+}
+
+#country_code_layer .country-list ul li i {
+    display: inline-block;
+    vertical-align: middle;
+    height: 12px;
+    width: 19px;
+    background-size: 19px 12px;
+    background-repeat: no-repeat;
+    margin-right: 14px;
+    margin-top: 3px
+}
+
+#country_code_layer .country-list ul li .flr {
+    margin-right: 5px;
+    float: right
+}
+
+#country_code_layer .country-list ul li span {
+    display: inline-block;
+    vertical-align: middle
+}
+
+#country_code_layer .country-list ul li:last-of-type {
+    margin-bottom: 0
+}
+
+.flr {
+    float: right
+}
+
+#no-result, #result {
+    clear: both
+}
+
+.scrollbar::-webkit-scrollbar {
+    width: 7px;
+    height: 9px
+}
+
+.scrollbar::-webkit-scrollbar-button:end:increment, .scrollbar::-webkit-scrollbar-button:start:decrement {
+    display: block;
+    height: 0;
+    background-color: transparent
+}
+
+.scrollbar::-webkit-scrollbar-track-piece {
+    -webkit-border-radius: 0;
+    -webkit-border-bottom-right-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    background: #ebebeb
+}
+
+.scrollbar::-webkit-scrollbar-thumb:vertical {
+    height: 50px;
+    background-color: rgba(0, 0, 0, .2);
+    -webkit-border-radius: 4px
+}
+
+.scrollbar::-webkit-scrollbar-thumb:horizontal {
+    width: 50px;
+    background-color: rgba(0, 0, 0, .2);
+    -webkit-border-radius: 4px
+}
+
+.scrollbar {
+    scrollbar-face-color: #c7c7c7;
+    scrollbar-highlight-color: #c7c7c7;
+    scrollbar-3dlight-color: #c7c7c7;
+    scrollbar-darkshadow-color: #c7c7c7;
+    scrollbar-shadow-color: #c7c7c7;
+    scrollbar-arrow-color: #c7c7c7;
+    scrollbar-track-color: #ebebeb
+}
+
+.bodyOpenClassName {
+    overflow-y: hidden
+}
+
+.dialog {
+    margin: auto;
+    z-index: 999;
+    width: 500px;
+    max-height: 600px;
+    background: #fff;
+    /*border: 1px solid #ccc;*/
+    box-shadow: 2px 2px 5px hsla(0, 0%, 100%, .25)
+}
+
+.dialog, .dialog-mask {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0
+}
+
+.dialog-mask {
+    z-index: 998;
+    background-color: rgba(0, 0, 0, .7)
+}
+
+.dialog-head {
+    position: relative;
+    padding: 10px
+}
+
+.dialog-title {
+    margin: 0;
+    line-height: 30px;
+    font-size: 16px
+}
+
+.dialog-close {
+    right: 10px;
+    top: 10px;
+    background: #fff;
+    border: none;
+    font-family: iconfont !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #ccc
+}
+
+.dialog-close, .dialog-close:after {
+    position: absolute;
+    width: 20px;
+    height: 20px
+}
+
+.dialog-close:after {
+    left: 0;
+    top: 0;
+    content: "\e61c"
+}
+
+.dialog-body {
+    padding: 20px 10px 180px
+}
+
+.dialog-foot {
+    height: 50px;
+    border-top: 1px solid #f5f5f5;
+    overflow: hidden
+}
+
+.dialog-foot button {
+    display: inline-block;
+    width: 50%;
+    line-height: 50px;
+    text-align: center;
+    font-size: 14px
+}
+
+.dialog-cancel {
+    background-color: #fff
+}
+
+.single-button .dialog-cancel {
+    width: 100%
+}
+
+.dialog-submit {
+    background-color: #c71622;
+    color: #fff
+}
+
+.tips-dialog {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 999;
+    margin-left: -210px;
+    width: 420px;
+    height: 216px;
+    margin-top: -108px;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 100%, .25)
+}
+
+.tips-dialog .dialog-body {
+    padding: 0
+}
+
+.auth-main02 {
+    padding-top: 0
+}
+
+.auth-main02 .icon-question {
+    color: #06c;
+    font-size: 50px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center
+}
+
+.auth-main02 .tip-title {
+    color: #333;
+    font-size: 16px
+}
+
+.auth-main02 .btn-def {
+    cursor: pointer;
+    border-color: #999
+}
+
+div.popupCCShadow {
+    width: 410px;
+    height: 400px;
+    background: #fff;
+    padding: 30px
+}
+
+div.popupCCShadow .popupCCTitle {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    background: #fff
+}
+
+div.popupMask {
+    background: rgba(0, 0, 0, .7);
+    opacity: 1
+}
+
+.scan-txt {
+    position: relative;
+    overflow: hidden;
+    font-size: 28px;
+    color: #999;
+    text-align: center
+}
+
+.scan-txt, .scan-txt li {
+    height: 42px;
+    line-height: 42px
+}
+
+.scan-txt li {
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    visibility: hidden;
+    -webkit-animation: inTxtUp 2s forwards;
+    animation: inTxtUp 2s forwards
+}
+
+.scan-txt .fore2 {
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s
+}
+
+.scan-txt .fore3 {
+    -webkit-animation-name: inTxtUp2;
+    animation-name: inTxtUp2;
+    -webkit-animation-delay: 3.5s;
+    animation-delay: 3.5s
+}
+
+.scan-img {
+    width: 836px;
+    background: url(//misc.360buyimg.com/user/myjd/safe/auth/rubik/css/i/auth-scan01.png) no-repeat
+}
+
+.scan-fail-img, .scan-img {
+    height: 483px;
+    margin: 0 auto
+}
+
+.scan-fail-img {
+    width: 818px;
+    background: url(//misc.360buyimg.com/user/myjd/safe/auth/rubik/css/i/auth-scan02.png) no-repeat
+}
+
+.safe-loading {
+    background-image: url(//misc.360buyimg.com/channel/lib/1.2.0/css/i/lazyload.gif);
+    background-repeat: no-repeat;
+    background-position: 50% 50%
+}
+
+.setnew-wrap {
+    margin-top: 65px
+}
+
+.form-security-wrap {
+    margin-top: -10px
+}
+
+.tip-error {
+    text-align: left
+}
+
+@-webkit-keyframes inTxtUp {
+    0% {
+        visibility: visible;
+        -webkit-transform: translateY(42px);
+        transform: translateY(42px)
+    }
+    25% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+    75% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+    to {
+        -webkit-transform: translateY(-42px);
+        transform: translateY(-42px)
+    }
+}
+
+@keyframes inTxtUp {
+    0% {
+        visibility: visible;
+        -webkit-transform: translateY(42px);
+        transform: translateY(42px)
+    }
+    25% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+    75% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+    to {
+        -webkit-transform: translateY(-42px);
+        transform: translateY(-42px)
+    }
+}
+
+@-webkit-keyframes inTxtUp2 {
+    0% {
+        visibility: visible;
+        -webkit-transform: translateY(30px);
+        transform: translateY(30px)
+    }
+    25% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+    75% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+    to {
+        visibility: visible;
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+}
+
+@keyframes inTxtUp2 {
+    0% {
+        visibility: visible;
+        -webkit-transform: translateY(30px);
+        transform: translateY(30px)
+    }
+    25% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+    75% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+    to {
+        visibility: visible;
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+}
+
+.bank-logo {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url(//sp.jd.com/payment/1.2.0/css/i/bank-logo.png?20180725=);
+    background-repeat: no-repeat;
+    background-position: 0 -4256px;
+    width: 125px;
+    height: 28px;
+    overflow: hidden;
+    text-indent: -9999px
+}
+
+#bank-bjrcb {
+    background-position: 0 0
+}
+
+#bank-bob {
+    background-position: 0 -28px
+}
+
+#bank-cbhb {
+    background-position: 0 -56px
+}
+
+#bank-bocd {
+    background-position: 0 -84px
+}
+
+#bank-fudian {
+    background-position: 0 -112px
+}
+
+#bank-icbc {
+    background-position: 0 -140px
+}
+
+#bank-ceb {
+    background-position: 0 -168px
+}
+
+#bank-cgb, #bank-gdb {
+    background-position: 0 -196px
+}
+
+#bank-hkb {
+    background-position: 0 -224px
+}
+
+#bank-hzb {
+    background-position: 0 -252px
+}
+
+#bank-hengfeng {
+    background-position: 0 -280px
+}
+
+#bank-hxb {
+    background-position: 0 -4592px
+}
+
+#bank-ccb {
+    background-position: 0 -336px
+}
+
+#bank-jsb {
+    background-position: 0 -364px
+}
+
+#bank-bcm, #bank-bcom {
+    background-position: 0 -392px
+}
+
+#bank-jinghua {
+    background-position: 0 -420px
+}
+
+#bank-cmbc {
+    background-position: 0 -448px
+}
+
+#bank-njcb {
+    background-position: 0 -476px
+}
+
+#bank-nbcb {
+    background-position: 0 -504px
+}
+
+#bank-abc {
+    background-position: 0 -532px
+}
+
+#bank-pab {
+    background-position: 0 -560px
+}
+
+#bank-spdb {
+    background-position: 0 -588px
+}
+
+#bank-qdccb {
+    background-position: 0 -616px
+}
+
+#bank-srcb {
+    background-position: 0 -644px
+}
+
+#bank-bos, #bank-shb {
+    background-position: 0 -672px
+}
+
+#bank-sdb {
+    background-position: 0 -700px
+}
+
+#bank-wzcb {
+    background-position: 0 -728px
+}
+
+#bank-cib {
+    background-position: 0 -756px
+}
+
+#bank-cmb {
+    background-position: 0 -784px
+}
+
+#bank-zjtl {
+    background-position: 0 -812px
+}
+
+#bank-boc {
+    background-position: 0 -840px
+}
+
+#bank-post, #bank-psbc {
+    background-position: 0 -868px
+}
+
+#bank-citic {
+    background-position: 0 -4312px
+}
+
+#bank-cqrcb {
+    background-position: 0 -924px
+}
+
+#bank-cqcb {
+    background-position: 0 -952px
+}
+
+#bank-gzrcc {
+    background-position: 0 -980px
+}
+
+#bank-gzcb {
+    background-position: 0 -1008px
+}
+
+#bank-hsb {
+    background-position: 0 -1036px
+}
+
+#bank-czb {
+    background-position: 0 -4004px
+}
+
+#bank-bonc {
+    background-position: 0 -1092px
+}
+
+#bank-gdnyb {
+    background-position: 0 -1120px
+}
+
+#bank-chab {
+    background-position: 0 -1148px
+}
+
+#bank-dylscz {
+    background-position: 0 -1177px
+}
+
+#bank-dzb {
+    background-position: 0 -1205px
+}
+
+#bank-lwb {
+    background-position: 0 -1904px
+}
+
+#bank-qsb {
+    background-position: 0 -1260px
+}
+
+#bank-rzb {
+    background-position: 0 -1289px
+}
+
+#bank-tab {
+    background-position: 0 -1317px
+}
+
+#bank-lsb {
+    background-position: 0 -1345px
+}
+
+#bank-wfccb {
+    background-position: 0 -1373px
+}
+
+#bank-ordos {
+    background-position: 0 -1401px
+}
+
+#bank-boxm {
+    background-position: 0 -1430px
+}
+
+#bank-bolj {
+    background-position: 0 -1456px
+}
+
+#bank-jzcb {
+    background-position: 0 -1484px
+}
+
+#bank-jjccb {
+    background-position: 0 -1512px
+}
+
+#bank-cjccb {
+    background-position: 0 -1568px
+}
+
+#bank-boly {
+    background-position: 0 -1596px
+}
+
+#bank-hubnx {
+    background-position: 0 -1623px
+}
+
+#bank-bhrcb {
+    background-position: 0 -1708px
+}
+
+#bank-hbnx {
+    background-position: 0 -1794px
+}
+
+#bank-gsnx {
+    background-position: 0 -1652px
+}
+
+#bank-bsb {
+    background-position: 0 -1820px
+}
+
+#bank-shxnx {
+    background-position: 0 -1764px
+}
+
+#bank-jsnx {
+    background-position: 0 -1681px
+}
+
+#bank-whrcb {
+    background-position: 0 -1736px
+}
+
+#bank-jzb {
+    background-position: 0 -1876px
+}
+
+#bank-drcb {
+    background-position: 0 -1848px
+}
+
+#bank-nmgnx {
+    background-position: 0 -1959px
+}
+
+#bank-pzhccb {
+    background-position: 0 -1989px
+}
+
+#bank-egb {
+    background-position: 0 -1932px
+}
+
+#bank-dyccb {
+    background-position: 0 -2045px
+}
+
+#bank-whccb {
+    background-position: 0 -2155px
+}
+
+#bank-jlnx {
+    background-position: 0 -2073px
+}
+
+#bank-sxnx {
+    background-position: 0 -2128px
+}
+
+#bank-bojn {
+    background-position: 0 -2100px
+}
+
+#bank-bozz {
+    background-position: 0 -2213px
+}
+
+#bank-ytcb {
+    background-position: 0 -2184px
+}
+
+#bank-bobd {
+    background-position: 0 -2016px
+}
+
+#bank-scnx {
+    background-position: 0 -2324px
+}
+
+#bank-hnnx {
+    background-position: 0 -2379px
+}
+
+#bank-bogy {
+    background-position: 0 -3921px
+}
+
+#bank-lzcb {
+    background-position: 0 -2295px
+}
+
+#bank-bogl {
+    background-position: 0 -2268px
+}
+
+#bank-zjtlcb {
+    background-position: 0 -2353px
+}
+
+#bank-boyk {
+    background-position: 0 -2548px
+}
+
+#bank-hunnx {
+    background-position: 0 -2576px
+}
+
+#bank-lnnx {
+    background-position: 0 -2408px
+}
+
+#bank-shbank {
+    background-position: 0 -2464px
+}
+
+#bank-lycb {
+    background-position: 0 -2436px
+}
+
+#bank-zjkccb {
+    background-position: 0 -2716px
+}
+
+#bank-boxia {
+    background-position: 0 -2521px
+}
+
+#bank-gznx {
+    background-position: 0 -2604px
+}
+
+#bank-czcb {
+    background-position: 0 -2688px
+}
+
+#bank-tjrcb {
+    background-position: 0 -2660px
+}
+
+#bank-hbcl {
+    background-position: 0 -2632px
+}
+
+#bank-gxnx {
+    background-position: 0 -2772px
+}
+
+#bank-pjccb {
+    background-position: 0 -4480px
+}
+
+#bank-bosj {
+    background-position: 0 -2800px
+}
+
+#bank-xhdlcz {
+    background-position: 0 -2829px
+}
+
+#bank-zjgrcb {
+    background-position: 0 -2856px
+}
+
+#bank-jnrcb {
+    background-position: 0 -2884px
+}
+
+#bank-jyrcb {
+    background-position: 0 -2912px
+}
+
+#bank-ksrcb {
+    background-position: 0 -2940px
+}
+
+#bank-tcrcb {
+    background-position: 0 -2968px
+}
+
+#bank-wjrcb {
+    background-position: 0 -2996px
+}
+
+#bank-urb {
+    background-position: 0 -3025px
+}
+
+#bank-yrrcb {
+    background-position: 0 -3080px
+}
+
+#bank-hanabank {
+    background-position: 0 -3053px
+}
+
+#bank-xjnx {
+    background-position: 0 -3109px
+}
+
+#bank-grcb {
+    background-position: 0 -3164px
+}
+
+#bank-hnrcc {
+    background-position: 0 -3136px
+}
+
+#bank-xmib {
+    background-position: 0 -3192px
+}
+
+#bank-bozj {
+    background-position: 0 -3219px
+}
+
+#bank-boxj {
+    background-position: 0 -3277px
+}
+
+#bank-ynnx {
+    background-position: 0 -3249px
+}
+
+#bank-bojl {
+    background-position: 0 -3304px
+}
+
+#bank-bodl {
+    background-position: 0 -3332px
+}
+
+#bank-ykyh {
+    background-position: 0 -3360px
+}
+
+#bank-cdrcb {
+    background-position: 0 -3388px
+}
+
+#bank-boqz {
+    background-position: 0 -3416px
+}
+
+#bank-beeb {
+    background-position: 0 -3444px
+}
+
+#bank-qhnx {
+    background-position: 0 -3499px
+}
+
+#bank-lzccb {
+    background-position: 0 -3472px
+}
+
+#bank-tsccb {
+    background-position: 30px -3528px
+}
+
+#bank-szrcb {
+    background-position: 0 -3555px
+}
+
+#bank-bocz {
+    background-position: 0 -3584px
+}
+
+#bank-tjwqcz {
+    background-position: 0 -3667px
+}
+
+#bank-bohh {
+    background-position: 0 -3640px
+}
+
+#bank-xtb {
+    background-position: 0 -3695px
+}
+
+#bank-bofx {
+    background-position: 0 -3724px
+}
+
+#bank-bohrb {
+    background-position: 0 -3808px
+}
+
+#bank-jccb {
+    background-position: 0 -3781px
+}
+
+#bank-bokl {
+    background-position: 0 -3752px
+}
+
+#bank-wxrcb {
+    background-position: 0 -3836px
+}
+
+#bank-bohz {
+    background-position: 0 -3864px
+}
+
+#bank-hljnx {
+    background-position: 0 -3892px
+}
+
+#bank-bonx {
+    background-position: 0 -3947px
+}
+
+#bank-cdb {
+    background-position: 0 -3975px
+}
+
+#bank-bofs {
+    background-position: 0 -4060px
+}
+
+#bank-botl {
+    background-position: 0 -4032px
+}
+
+#bank-bopds {
+    background-position: 0 -4088px
+}
+
+#bank-botz {
+    background-position: 0 -4173px
+}
+
+#bank-yzcz {
+    background-position: 0 -4200px
+}
+
+#bank-qlb {
+    background-position: 0 -4144px
+}
+
+#bank-body {
+    background-position: 0 -4340px
+}
+
+#bank-zyb {
+    background-position: 0 -4229px
+}
+
+#bank-bos {
+    background-position: 0 -4284px
+}
+
+#bank-boqhd {
+    background-position: 0 -4367px
+}
+
+#bank-webank {
+    background-position: 0 -4423px
+}
+
+#bank-zjnx {
+    background-position: 0 -4395px
+}
+
+#bank-snccb {
+    background-position: 0 -4451px
+}
+
+#bank-fjnx {
+    background-position: 0 -4535px
+}
+
+#bank-dlrcb {
+    background-position: 0 -4564px
+}
+
+#bank-bozh {
+    background-position: 0 -4619px
+}
+
+#bank-czccb {
+    background-position: 0 -4645px
+}
+
+#bank-bohld {
+    background-position: 0 -4674px
+}
+
+#bank-bowh {
+    background-position: 0 -4703px
+}
+
+#bank-bocy {
+    background-position: 0 -4731px
+}
+
+#bank-boas {
+    background-position: 0 -4758px
+}
+
+#bank-boxc {
+    background-position: 0 -4787px
+}
+
+#bank-rhczcz {
+    background-position: 0 -4814px
+}
+
+#bank-bohn {
+    background-position: 0 -4843px
+}
+
+#bank-ynht {
+    background-position: 0 -4871px
+}
+
+#bank-csxb {
+    background-position: 0 -4899px
+}
+
+#bank-gdnx {
+    background-position: 0 -4927px
+}
+
+#bank-jxnx {
+    background-position: 0 -4984px
+}
+
+#bank-shbr {
+    background-position: 0 -4954px
+}
+
+#bank-bogs {
+    background-position: 0 -5011px
+}
+
+#bank-sdeb {
+    background-position: 0 -5039px
+}
+
+#bank-citib {
+    background-position: 0 -5068px
+}
+
+#bank-tibet {
+    background-position: 0 -5095px
+}
+
+#bank-ibk {
+    background-position: 0 -5123px
+}
+
+#bank-woori {
+    background-position: 0 -5152px
+}
+
+#bank-yqccb {
+    background-position: 0 -5180px
+}
+
+#bank-csrcb {
+    background-position: 0 -5207px
+}
+
+.progress-bar {
+    margin-top: 44px;
+    text-align: center
+}
+
+.progress-bar .pro-item {
+    position: relative;
+    display: inline-block;
+    padding-left: 140px
+}
+
+.progress-bar .pro-item1 {
+    padding-left: 0
+}
+
+.progress-bar .step-index {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    margin-bottom: 14px;
+    text-align: center;
+    line-height: 34px;
+    font-size: 14px;
+    background: #d8dcdd;
+    color: #666;
+    border-radius: 50%
+}
+
+.progress-bar .step-index:after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 42px;
+    height: 42px;
+    left: -4px;
+    top: -4px;
+    background: #d8dcdd;
+    opacity: .1568;
+    border-radius: 50%
+}
+
+.progress-bar .pro-line {
+    position: absolute;
+    left: -11px;
+    top: 13px;
+    width: 162px;
+    height: 7px;
+    background: #d8dcdd
+}
+
+.progress-bar .step-desc {
+    font-size: 14px;
+    color: #666
+}
+
+.progress-bar .pro-doing .step-index, .progress-bar .pro-done .step-index {
+    background: #0c8;
+    color: #fff
+}
+
+.progress-bar .pro-doing .pro-line, .progress-bar .pro-doing .step-index:after, .progress-bar .pro-done .pro-line, .progress-bar .pro-done .step-index:after {
+    background: #0c8
+}
+
+.progress-bar .pro-doing .step-desc, .progress-bar .pro-done .step-desc {
+    color: #0c8
+}
+
+body, html {
+    background: #fff
+}
+
+.safe-html, .safe-html body {
+    background: #eff3ef
+}
+
+#footer-2017, #service-2017 {
+    background: transparent
+}
+
+.header-wrap {
+    height: 110px;
+    background: #fff
+}
+
+.header-wrap .header {
+    background: transparent
+}
+
+.safeindex-wrap {
+    width: 1128px;
+    margin: 0 auto
+}
+
+.safeindex-nav {
+    height: 140px;
+    background: url(//misc.360buyimg.com/user/myjd/safe/auth/rubik/2.0.34/css/i/nav-bg.png);
+    margin-top: 20px
+}
+
+.safeindex-loading {
+    width: 100%;
+    min-height: 600px;
+    background: url(//misc.360buyimg.com/user/myjd/safe/auth/rubik/2.0.34/css/i/lazyload.gif) no-repeat 50%
+}
+
+.safe-level {
+    float: left;
+    margin-left: 40px
+}
+
+.safe-level .level-progress {
+    float: left;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin-top: 25px;
+    margin-right: 29px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: 50%
+}
+
+.safe-level .lp1 {
+    background-image: url(//misc.360buyimg.com/user/myjd/safe/auth/rubik/2.0.34/css/i/safe-p1.png)
+}
+
+.safe-level .lp2 {
+    background-image: url(//misc.360buyimg.com/user/myjd/safe/auth/rubik/2.0.34/css/i/safe-p2.png)
+}
+
+.safe-level .lp3 {
+    background-image: url(//misc.360buyimg.com/user/myjd/safe/auth/rubik/2.0.34/css/i/safe-p3.png)
+}
+
+.safe-level .level-info {
+    float: left;
+    margin-top: 42px
+}
+
+.safe-level .level-info .txt1 {
+    height: 29px;
+    margin-bottom: 5px;
+    font-size: 22px;
+    color: #333;
+    letter-spacing: -.34px;
+    text-align: left
+}
+
+.safe-level .level-info .txt2 {
+    font-size: 14px;
+    color: #333;
+    letter-spacing: -.22px;
+    text-align: left
+}
+
+.s-nav {
+    float: right;
+    margin-top: 67px;
+    margin-right: 40px;
+    font-size: 20px;
+    color: #333;
+    letter-spacing: -.31px;
+    text-align: left
+}
+
+.s-nav li {
+    float: left;
+    height: 26px;
+    line-break: 26px;
+    margin-right: 60px
+}
+
+.s-nav li:last-child {
+    margin-right: 0
+}
+
+.s-nav li a {
+    color: #333;
+    text-decoration: none
+}
+
+.s-nav li a:hover {
+    color: #e0071c
+}
+
+.safeindex-authlist {
+    margin: 20px auto 0
+}
+
+.safeindex-authlist .list-item {
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 240px;
+    padding: 36px 33px 25px;
+    margin: 0 21px 21px 0;
+    background: #fff
+}
+
+.safeindex-authlist .list-item:nth-child(4n+0) {
+    margin-right: 0
+}
+
+.safeindex-authlist .list-status {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 41px;
+    height: 47px
+}
+
+.safeindex-authlist .list-status i {
+    display: block;
+    position: absolute;
+    right: 1px;
+    top: 3px;
+    width: 22px;
+    height: 21px
+}
+
+.safeindex-authlist .status-unlock {
+    background: url(//misc.360buyimg.com/user/myjd/safe/auth/rubik/2.0.34/css/i/green-bg.png)
+}
+
+.safeindex-authlist .status-unlock i {
+    background: url(//misc.360buyimg.com/user/myjd/safe/auth/rubik/2.0.34/css/i/unlock.png) no-repeat 50%
+}
+
+.safeindex-authlist .status-lock {
+    background: url(//misc.360buyimg.com/user/myjd/safe/auth/rubik/2.0.34/css/i/gray-bg.png)
+}
+
+.safeindex-authlist .status-lock i {
+    background: url(//misc.360buyimg.com/user/myjd/safe/auth/rubik/2.0.34/css/i/lock.png) no-repeat 50%
+}
+
+.safeindex-authlist .list-ico {
+    width: 84px;
+    height: 70px;
+    margin: 0 auto 25px;
+    background-repeat: no-repeat;
+    background-image: url(//misc.360buyimg.com/user/myjd/safe/auth/rubik/2.0.34/css/i/auth-index-ico.png);
+    overflow: hidden
+}
+
+.safeindex-authlist .sjh-ico {
+    background-position: 0 0
+}
+
+.safeindex-authlist .dlmm-ico {
+    background-position: 0 -80px
+}
+
+.safeindex-authlist .smrz-ico {
+    background-position: -94px -240px
+}
+
+.safeindex-authlist .szzs-ico {
+    background-position: 0 -400px
+}
+
+.safeindex-authlist .yx-ico {
+    background-position: 0 -240px
+}
+
+.safeindex-authlist .dlbh-ico {
+    background-position: 0 -320px
+}
+
+.safeindex-authlist .zfmm-ico {
+    background-position: 0 -160px
+}
+
+.safeindex-authlist .mbwt-ico {
+    background-position: -94px -320px
+}
+
+.safeindex-authlist .lock_pc-ico {
+    background-position: -94px -160px
+}
+
+.safeindex-authlist .qysmrz-ico {
+    background-position: -94px -400px
+}
+
+.safeindex-authlist .lock_app-ico {
+    background-position: -94px 0
+}
+
+.safeindex-authlist .lock_wx-ico {
+    background-position: -94px -80px
+}
+
+.safeindex-authlist .list-tit {
+    margin-bottom: 17px;
+    font-size: 20px;
+    color: #333;
+    letter-spacing: -.31px;
+    text-align: left;
+    text-align: center
+}
+
+.safeindex-authlist .list-desc {
+    height: 18px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #999;
+    letter-spacing: -.22px;
+    line-height: 18px;
+    text-align: center
+}
+
+.safeindex-authlist .list-desc.ac {
+    text-align: center
+}
+
+.safeindex-authlist .list-btn {
+    display: block;
+    background: #fff;
+    border: 1px solid #999;
+    width: 198px;
+    height: 46px;
+    line-height: 46px;
+    font-size: 16px;
+    color: #333;
+    letter-spacing: -.25px;
+    text-align: center;
+    text-decoration: none
+}
+
+.safeindex-authlist .list-btn:hover {
+    border-color: #e2231a;
+    color: #e2231a;
+    cursor: pointer
+}
+
+.safeindex-authlist .list-btn-disabled, .safeindex-authlist .list-btn-disabled:hover {
+    border-color: #ccc;
+    color: #ccc
+}
+
+.safeindex-authlist .disable {
+    cursor: not-allowed
+}
+
+.device-list {
+    width: 840px;
+    margin-bottom: 0
+}
+
+.device-list .list-item:nth-child(4n+0) {
+    margin-right: 0
+}
+
+.device-list .btn-lockall {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 12px;
+    margin: 20px 0
+}
+
+.device-choice {
+    margin: 0 auto;
+    background: #fff;
+    width: 840px;
+    height: 48px;
+    line-height: 48px
+}
+
+.device-choice .checkbox {
+    margin-left: 10px
+}
+
+.device-choice .checkbox i {
+    display: inline-block;
+    vertical-align: text-top;
+    border: 1px solid #ccc;
+    width: 12px;
+    height: 12px;
+    margin-right: 10px
+}
+
+.device-choice .btn-primary {
+    float: right;
+    width: 132px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: -.28px;
+    text-align: center;
+    background: #e2231a
+}
+
+.safeindex-mini-authlist {
+    padding: 0 21px 20px;
+    background: #fff
+}
+
+.safeindex-mini-authlist .list-item {
+    float: left;
+    width: 183px;
+    margin-right: 42px
+}
+
+.safeindex-mini-authlist .list-item:last-child {
+    margin-right: 0
+}
+
+.safeindex-mini-authlist .list-item .list-ico {
+    display: block;
+    margin: 25px auto 27px;
+    width: 58px;
+    height: 46px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-image: url(//misc.360buyimg.com/user/myjd/safe/auth/rubik/2.0.34/css/i/auth-index-ico.png);
+    overflow: hidden
+}
+
+.safeindex-mini-authlist .list-item .zhsd-ico {
+    background-position: -185px -56px
+}
+
+.safeindex-mini-authlist .list-item .zhsq-ico {
+    background-position: -185px -112px
+}
+
+.safeindex-mini-authlist .list-item .zhss-ico {
+    background-position: -185px -168px
+}
+
+.safeindex-mini-authlist .list-item .zxzh-ico {
+    background-position: -185px -224px
+}
+
+.safeindex-mini-authlist .list-item .list-tit {
+    margin-bottom: 17px;
+    font-size: 16px;
+    color: #333;
+    letter-spacing: -.25px;
+    text-align: left;
+    text-align: center
+}
+
+.safeindex-mini-authlist .list-item .list-desc {
+    height: 22px;
+    margin-bottom: 17px;
+    font-size: 14px;
+    color: #999;
+    letter-spacing: -.22px;
+    text-align: center
+}
+
+.safeindex-mini-authlist .list-item .list-btn {
+    display: block;
+    width: 181px;
+    height: 44px;
+    line-height: 44px;
+    background: #fff;
+    border: 1px solid #999;
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
+    letter-spacing: -.25px;
+    text-align: center
+}
+
+.safeindex-mini-authlist .list-item .list-btn:hover {
+    border-color: #e2231a;
+    color: #e2231a
+}
+
+.safeindex-mini-authlist .list-item .list-btn-disabled, .safeindex-mini-authlist .list-item .list-btn-disabled:hover {
+    border-color: #ccc;
+    color: #ccc
+}
+
+.safeindex-mini-authlist .list-item .list-img {
+    height: 169px;
+    text-align: center;
+    line-height: 169px
+}
+
+.safeindex-tipwrap {
+    background: #fff8f0;
+    border-radius: 1px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #f82;
+    letter-spacing: -.22px;
+    text-align: left
+}
+
+.safeindex-tipwrap .icon-tip {
+    margin-right: 10px
+}
+
+.safeindex-tipwrap .alink {
+    color: #2c72ea;
+    margin-left: 10px
+}
+
+.safeindex-warnwrap {
+    background: #fff;
+    width: 1186px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 40px 0 60px
+}
+
+.safeindex-warnwrap .succ-icon, .safeindex-warnwrap .warn-icon {
+    display: inline-block;
+    color: #f82;
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
+    margin: 0 auto 17px;
+    font-size: 56px
+}
+
+.safeindex-warnwrap .succ-icon {
+    color: #4c3
+}
+
+.safeindex-warnwrap .auth-ico {
+    width: 70px;
+    height: 76px;
+    background-image: url(//misc.360buyimg.com/user/myjd/safe/auth/rubik/2.0.34/css/i/auth-ico.png)
+}
+
+.safeindex-warnwrap .warn-tit {
+    height: 26px;
+    line-height: 26px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #333;
+    letter-spacing: -.31px;
+    text-align: center
+}
+
+.safeindex-warnwrap .warn-hint {
+    line-height: 20px;
+    font-size: 14px;
+    color: #999;
+    letter-spacing: -.22px;
+    text-align: center
+}
+
+.safeindex-warnwrap .warn-desc {
+    color: #888;
+    font-size: 14px;
+    text-align: left;
+    width: 450px;
+    margin: 10px auto;
+    line-height: 25px
+}
+
+.safeindex-warnwrap .warn-opbtns {
+    margin-top: 28px
+}
+
+.safeindex-warnwrap .check-text {
+    margin-top: 20px;
+    color: #999
+}
+
+.safeindex-warnwrap .primary-link {
+    color: #06c;
+    cursor: default
+}
+
+.safeindex-warnwrap .check-ico, .safeindex-warnwrap .checked-ico {
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    background: url(//misc.360buyimg.com/user/myjd/safe/auth/rubik/2.0.34/css/i/check.png) no-repeat 50%;
+    overflow: hidden;
+    margin-right: 5px;
+    cursor: default
+}
+
+.safeindex-warnwrap .checked-ico {
+    background-image: url(//misc.360buyimg.com/user/myjd/safe/auth/rubik/2.0.34/css/i/checked.png)
+}
+
+.safeindex-warnwrap .warn-extra {
+    height: 20px;
+    line-height: 20px;
+    margin-top: 5px;
+    color: #ccc
+}
+
+.safeindex-warnwrap .warn-extra .icon-tip {
+    margin-right: 5px
+}
+
+.safeindex-warnwrap .btn-primary {
+    padding: 0 27px;
+    height: 46px;
+    line-height: 46px;
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: -.28px;
+    text-align: center;
+    background: #e2231a
+}
+
+.safeindex-warnwrap .btn-s {
+    padding: 0 26px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px
+}
+
+.safeindex-warnwrap .qr-hint {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666
+}
+
+.safeindex-warnwrap .qr-cont {
+    height: 200px;
+    margin: 36px auto 5px
+}
+
+.safeindex-warnwrap .qr-img {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid #f4f4f4;
+    padding: 15px
+}
+
+.safeindex-warnwrap .qr-img img {
+    width: 147px;
+    height: 147px
+}
+
+.safeindex-warnwrap .fail-msg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background: rgba(0, 0, 0, .5);
+    text-align: center;
+    overflow: hidden;
+    font-size: 14px
+}
+
+.safeindex-warnwrap .fail-msg .fail-txt {
+    margin: 60px 0 10px
+}
+
+.safeindex-warnwrap .qrcode-help {
+    display: none;
+    vertical-align: top;
+    width: 148px;
+    height: 168px;
+    margin-left: 5px;
+    background: url(//misc.360buyimg.com/user/myjd/safe/auth/rubik/2.0.34/css/i/phone-orange.png)
+}
+
+.safeindex-warnwrap .qr-cont-hover .qrcode-help {
+    display: inline-block
+}
+
+.safeindex-warnwrap .qr-txt {
+    line-height: 25px;
+    font-size: 14px
+}
+
+.safeindex-warnwrap .ftx-01 {
+    color: #d1392b
+}
+
+#accountCancel .safeindex-warnwrap .warn-desc {
+    width: 550px
+}
+
+.face-warnwrap {
+    width: auto
+}
+
+.checkbox-warnwrap {
+    width: auto;
+    padding: 0
+}
+
+.checkbox-warnwrap .btn-primary {
+    height: 38px;
+    line-height: 38px;
+    font-size: 16px
+}
+
+.checkbox-warnwrap .btn-m {
+    min-width: 98px;
+    width: auto
+}
+
+.prolist {
+    width: 400px;
+    margin: 0 auto
+}
+
+.prolist .pro-tit {
+    height: 26px;
+    line-height: 26px;
+    margin-bottom: 23px;
+    font-size: 20px;
+    color: #333;
+    letter-spacing: -.31px;
+    text-align: center
+}
+
+.prolist .pro-item {
+    padding-left: 60px;
+    margin-top: -1px;
+    background: #fff;
+    border: 1px solid #ccc;
+    width: 338px;
+    height: 52px;
+    line-height: 52px;
+    font-size: 14px;
+    color: #333;
+    letter-spacing: -.22px;
+    text-align: left;
+    cursor: default;
+    box-sizing: content-box;
+    background: url(//misc.360buyimg.com/user/myjd/safe/auth/rubik/2.0.34/css/i/auth-selt.png) 36px no-repeat #fff
+}
+
+.prolist .pro-item.selected {
+    background: url(//misc.360buyimg.com/user/myjd/safe/auth/rubik/2.0.34/css/i/auth-selted.png) 36px no-repeat #fff
+}
+
+.prolist .pro-hint {
+    line-height: 20px;
+    font-size: 14px;
+    color: #999;
+    letter-spacing: -.22px;
+    text-align: center
+}
+
+.prolist .pro-btns {
+    margin-top: 40px;
+    text-align: center
+}
+
+.prolist .btn-primary {
+    display: inline-block;
+    padding: 0 27px;
+    height: 54px;
+    line-height: 54px;
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: -.28px;
+    text-align: center;
+    background: #e2231a
+}
+
+.prolist .btn-xs {
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px
+}
+
+.prolist .btn-def {
+    display: inline-block;
+    border: 1px solid #e2231a;
+    padding: 0 27px;
+    height: 34px;
+    line-break: 34px;
+    font-size: 14px;
+    color: #e2231a;
+    letter-spacing: -.22px;
+    text-align: center
+}
+
+.prolist .btn-m {
+    width: auto;
+    height: 54px;
+    line-height: 54px;
+    font-size: 18px
+}
+
+.prolist .iconfont {
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    margin: 0 auto 20px;
+    font-size: 48px
+}
+
+.prolist .warn-icon {
+    color: #f82
+}
+
+.prolist .icon-done {
+    color: #3b4
+}
+
+.prolist .warn-desc {
+    font-size: 14px;
+    color: #666;
+    line-height: 25px
+}
+
+.prolist .answer-item-list {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 18px 30px 0
+}
+
+.prolist .answer-item {
+    margin-bottom: 34px;
+    font-family: Microsoft YaHei;
+    font-size: 14px;
+    color: #333;
+    letter-spacing: -.22px;
+    text-align: left;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden
+}
+
+.prolist .answer-cont {
+    margin-left: 20px
+}
+
+.prolist .security-warn-tip {
+    color: #e2231a;
+    line-break: 20px
+}
+
+.prolist .security-warn-tip .iconfont {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    margin: 0 5px 0 0;
+    font-size: 20px
+}
+
+.plus-infos {
+    position: relative;
+    padding: 0 0 0 100px;
+    width: 350px;
+    margin: 0
+}
+
+.plus-infos .warn-icon {
+    position: absolute;
+    left: 36px;
+    top: 0;
+    width: 48px;
+    height: 48px;
+    background: url(https://img11.360buyimg.com/schoolbt/jfs/t1/99808/40/11541/576/5e37d79bE267b988a/8ef520313dd0d7d1.png) no-repeat
+}
+
+.plus-infos .pro-tit {
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 8px
+}
+
+.plus-infos .warn-desc {
+    margin: 0
+}
+
+.plus-infos .pro-btns {
+    margin-top: 12px;
+    text-align: left
+}
+
+.plus-infos .btn-mini {
+    height: 26px;
+    line-height: 26px;
+    font-size: 12px;
+    padding: 0 16px
+}
+
+.plus-infos .btn-def {
+    background: #f7f7f7;
+    border: 1px solid #ddd;
+    color: #333
+}
+
+.simi-wrap {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.safe-simitip {
+    position: relative;
+    z-index: 1000;
+    padding: 25px;
+    display: inline-block;
+    font-size: 12px;
+    color: #333;
+    letter-spacing: -.19px;
+    text-align: left;
+    background: #fff
+}
+
+.safe-simitip .iconfont {
+    margin-right: 4px
+}
+
+.safe-simitip .icon-done {
+    color: #3b4
+}
+
+.safe-simitip .icon-tip {
+    color: #f82
+}
+
+.accounttips-wrap {
+    height: 400px;
+    width: 100%;
+    overscroll-behavior: contain;
+    -ms-scroll-chaining: contain
+}
+
+.accounttips-wrap * {
+    touch-action: pan-y
+}
+
+.accounttips-wrap .overview {
+    width: 100%;
+    height: 400px;
+    padding-left: 5px
+}
+
+.accounttips-wrap .overview .scrollbar-container, .accounttips-wrap .overview .scrollbar-container.active, .accounttips-wrap .overview .scrollbar-container:hover {
+    background: #dcdcdc
+}
+
+.accounttips-wrap .overview .scrollbar-container.vertical .scrollbar {
+    background: #333;
+    border-radius: 4px
+}
+
+.accounttips-wrap .accounttips-cont {
+    width: 760px;
+    line-height: 25px;
+    font-size: 14px;
+    color: #333
+}
+
+.accounttips-wrap .accounttips-cont .underline {
+    text-decoration: underline
+}
+
+.accounttips-wrap .accounttips-cont .bc-yellow {
+    background-color: #ff0
+}
+
+.accounttips-wrap .accounttips-cont .fc-blue, .accounttips-wrap .accounttips-cont a {
+    color: #00f
+}
+
+.accounttips-wrap .btn-primary {
+    display: block;
+    margin: 30px auto 0;
+    padding: 0 27px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: -.28px;
+    text-align: center;
+    background: #e2231a
+}
+
+.questionnaire-wrap {
+    width: 475px;
+    margin-top: 0
+}
+
+.questionnaire-wrap .questionnaire-list-wrap {
+    height: 260px;
+    width: 100%
+}
+
+.questionnaire-wrap .questionnaire-list-wrap .overview {
+    width: 460px;
+    height: 260px;
+    padding-left: 5px
+}
+
+.questionnaire-wrap .questionnaire-imgs-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 391px;
+    height: 351px;
+    padding: 30px;
+    margin: 0 auto 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    justify-content: center
+}
+
+.questionnaire-wrap .questionnaire-imgs-list .q-item {
+    position: relative;
+    width: 98px;
+    height: 98px;
+    margin: 0 45px 24px 0;
+    border: 1px solid #ccc
+}
+
+.questionnaire-wrap .questionnaire-imgs-list .q-item:nth-child(3n+0) {
+    margin-right: 0
+}
+
+.questionnaire-wrap .questionnaire-imgs-list .q-item-selted {
+    border-color: #d43622
+}
+
+.questionnaire-wrap .questionnaire-imgs-list .q-item-selted i {
+    position: absolute;
+    display: block;
+    width: 16px;
+    height: 15px;
+    right: -1px;
+    bottom: 0;
+    background: url(//misc.360buyimg.com/user/myjd/safe/auth/rubik/2.0.34/css/i/li-selted.png) no-repeat
+}
+
+.questionnaire-wrap .questionnaire-txt-list {
+    padding: 16px 0;
+    margin-bottom: 20px;
+    background: #fff;
+    border: 1px solid #ccc
+}
+
+.questionnaire-wrap .questionnaire-txt-list .q-item {
+    padding-left: 44px;
+    background: #fff;
+    width: 402px;
+    font-size: 14px;
+    color: #333;
+    letter-spacing: -.22px;
+    text-align: left;
+    margin-top: 16px;
+    cursor: default;
+    box-sizing: content-box;
+    background: url(//misc.360buyimg.com/user/myjd/safe/auth/rubik/2.0.34/css/i/auth-selt.png) 20px no-repeat #fff
+}
+
+.questionnaire-wrap .questionnaire-txt-list .q-item.q-item-selted {
+    background: url(//misc.360buyimg.com/user/myjd/safe/auth/rubik/2.0.34/css/i/auth-selted.png) 20px no-repeat #fff
+}
+
+.questionnaire-wrap .questionnaire-txt-list .q-item:first-child {
+    margin-top: 0
+}
+
+.cancelDialogBox {
+    max-height: 380px
+}
+
+.cancelDialogBox .dialog-body {
+    padding-bottom: 40px
+}
+
+.plusDialogBox {
+    max-height: 200px;
+    width: 520px
+}
+
+.plusDialogBox .dialog-body {
+    padding-bottom: 30px
+}
+
+.cancelDialogBox2 {
+    width: 800px;
+    max-height: 600px
+}
+
+.cancelDialogBox2 .dialog-body {
+    padding-bottom: 100px
+}
+
+.loginProDialogBox {
+    max-height: 420px
+}
+
+.loginProDialogBox .dialog-body {
+    padding-bottom: 40px
+}
+
+.checkMobileDialogBox {
+    max-height: 330px
+}
+
+.checkMobileDialogBox .dialog-body {
+    padding-bottom: 40px
+}
+
+.proCloseDialogBox {
+    max-height: 260px
+}
+
+.proCloseDialogBox .dialog-body {
+    padding-bottom: 40px
+}
+
+.form-issue-wrap .form-item {
+    min-height: 52px
+}
+
+.form-issue-wrap .form-item .item-input-wrap {
+    margin-left: 0;
+    background: #fff;
+    border-color: #ccc
+}
+
+.form-issue-wrap .form-item .item-input-wrap .field {
+    padding-left: 20px
+}
+
+.form-issue-wrap .form-item .input-tips {
+    min-height: auto
+}
+
+.form-issue-wrap .z-error .item-input-wrap {
+    border-color: #f83
+}
+
+.dropdown-issue {
+    position: relative;
+    width: 400px;
+    margin: 0 auto;
+    z-index: 10
+}
+
+.dropdown-issue .issue-wrap {
+    position: absolute;
+    top: 52px;
+    left: 0;
+    width: 400px;
+    height: 200px
+}
+
+.dropdown-issue .issue-wrap .overview {
+    height: 200px
+}
+
+.dropdown-issue .lrc-dropdown-menu:after {
+    position: absolute;
+    content: "";
+    right: 20px;
+    top: 50%;
+    margin-top: -3px;
+    width: 0;
+    height: 0;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 6px solid #333
+}
+
+.dropdown-issue .lrc-dropdown-item, .dropdown-issue .lrc-dropdown-menu {
+    width: 378px;
+    height: 50px;
+    padding-left: 20px;
+    line-height: 50px;
+    background: #fff;
+    border: 1px solid #ccc;
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+    color: #333;
+    letter-spacing: -.22px;
+    text-align: left
+}
+
+.dropdown-issue .lrc-dropdown-item {
+    height: 45px;
+    line-height: 45px;
+    border-width: 0 1px
+}
+
+.dropdown-issue .lrc-dropdown-item:hover {
+    background: #f6f6f6;
+    color: #e0071c
+}
+
+.dropdown-issue .lrc-dropdown-item:last-child {
+    border-width: 0 1px 1px
+}
+
+.dropdown-issue-curr {
+    z-index: 12
+}
+
+.dropdown-issue-curr .lrc-dropdown-menu:after {
+    margin-top: -9px;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid #333
+}
+
+.wd-wrap {
+    font-size: 14px;
+    color: #333;
+    letter-spacing: 0;
+    text-align: left
+}
+
+.wd-wrap .wd-item {
+    margin-bottom: 30px
+}
+
+.wd-wrap .wd-header {
+    padding-left: 23px;
+    background: url(//img13.360buyimg.com/schoolbt/jfs/t30205/292/1498682157/610/1f435a6e/5ce26ac9Nd5ba5e72.png) no-repeat 0 0;
+    margin-bottom: 8px
+}
+
+.wd-wrap .wd-cont {
+    padding-left: 23px;
+    background: url(//img13.360buyimg.com/schoolbt/jfs/t28141/215/1524189875/532/e901d5bc/5ce26ac9N4e21a59a.png) no-repeat 0 0;
+    color: #666;
+    line-height: 18px
+}
+
+.btn-check-defaut {
+    font-family: Microsoft YaHei;
+    background: #f3f3f3;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    color: #999;
+    letter-spacing: -.25px
+}
+
+.btn-check-defaut .icon-click {
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 18px;
+    background: url(//misc.360buyimg.com/user/myjd/safe/auth/rubik/2.0.34/css/i/click.png) no-repeat;
+    overflow: hidden;
+    margin-right: 7px
+}
+
+.btn-check-succ {
+    font-family: Microsoft YaHei;
+    background: #fff;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    color: #0c8;
+    letter-spacing: -.25px
+}
+
+.btn-check-succ .icon-done {
+    width: 18px;
+    height: 18px;
+    margin-right: 7px !important;
+    color: #0c8 !important
+}
+
+.form-item-validate {
+    position: relative
+}
+
+.slide-authCode-wrape {
+    display: block;
+    line-height: 1.5;
+    text-align: left;
+    position: absolute;
+    left: 0;
+    bottom: 65px;
+    font-family: Microsoft YaHei;
+    background-color: #fff;
+    cursor: default;
+    z-index: 110;
+    box-shadow: 0 0 2px 2px #eee;
+    border: 1px solid #eee;
+    width: 364px;
+    height: 216.5px;
+    padding: 12px 12px 12px 20px
+}
+
+.slide-authCode-wrape .close {
+    cursor: pointer;
+    z-index: 100;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-image: url(//misc.360buyimg.com/user/reg/1.0.0/widget/personal-reg-1130/i/x.png)
+}
+
+.slide-authCode-wrape .arrow {
+    display: block;
+    position: absolute;
+    background-image: url(//misc.360buyimg.com/user/reg/1.0.0/widget/foreign-number-layer-170524/i/tips.gif);
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 8px;
+    background-position: 0 -8px;
+    overflow: hidden;
+    bottom: -8px;
+    left: 190px
+}
+
+.slide-authCode-wrape .JDJRV-refresh {
+    margin-right: 25px !important
+}
+
+.btn-pro {
+    padding: 0 20px;
+    width: auto;
+    height: 54px;
+    line-height: 54px;
+    font-size: 18px
+}
+
+.pro-main {
+    margin-top: 20px;
+    background: #fff;
+    padding: 100px 0
+}
+
+.pro-main .m-tip1 {
+    width: 502px
+}
+
+.pro-main .tip-info, .white-wrap {
+    margin-top: 20px
+}
+
+.white-wrap {
+    background: #fff;
+    overflow: hidden;
+    padding-bottom: 80px
+}
+
+.lrc-date-picker-datenumber {
+    cursor: pointer
+}
+
+.lrc-date-picker-weeknumber abbr {
+    text-decoration: none;
+    width: 24px;
+    height: 24px;
+    padding: 0 4px;
+    text-align: center
+}
+
+.lrc-date-picker-weekday-row .lrc-date-picker-datenumber, .lrc-date-picker-weeknumber {
+    width: 46px;
+    height: 22px;
+    line-height: 22px;
+    padding: 0 4px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    overflow: hidden
+}
+
+.lrc-date-picker-datenumber.last, .lrc-date-picker-datenumber.next {
+    opacity: .25
+}
+
+.lrc-date-picker-weekday-row .disable {
+    opacity: .25;
+    background: #f5f5f5;
+    cursor: not-allowed
+}
+
+.lrc-date-picker-weekday-row .curr-day {
+    background: #1890ff;
+    color: #fff
+}
+
+.lrc-date-picker-contain {
+    position: relative;
+    margin-bottom: 15px
+}
+
+.lrc-date-picker-input {
+    width: 378px;
+    height: 52px;
+    padding: 0 0 0 20px;
+    line-height: 52px;
+    font-size: 14px;
+    color: #333;
+    font-family: Arial;
+    border: 1px solid #ccc
+}
+
+.lrc-date-picker-header {
+    font-size: 14px;
+    line-height: 46px;
+    text-align: center;
+    margin-top: 10px
+}
+
+.lrc-date-picker-header select {
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px 10px 0 0
+}
+
+.lrc-date-picker-canlendar-contain {
+    position: absolute;
+    width: 400px;
+    height: 0;
+    transition: height .3s, opacity .5s;
+    overflow: hidden;
+    background: #fff;
+    z-index: 99;
+    opacity: 0
+}
+
+.lrc-calendar {
+    border: 1px solid #ccc;
+    background: #fff
+}
+
+.lrc-date-picker-canlendar-contain.open {
+    height: 300px;
+    opacity: 1;
+    background: transparent
+}
+
+.lrc-calendar .today {
+    display: inline-block;
+    cursor: pointer
+}
+
+.lrc-calendar .ok {
+    display: inline-block
+}
+
+.lrc-calendar .date-shortcut {
+    display: inline-block;
+    user-select: none
+}
+
+.association-wrap {
+    width: 800px;
+    margin: 0 auto
+}
+
+.association-wrap .asso-tit {
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    line-height: 24px;
+    margin-bottom: 24px;
+    padding-top: 30px
+}
+
+.association-wrap .asso-tit h3 {
+    font-weight: 400
+}
+
+.association-wrap .asso-warn {
+    display: inline-block;
+    width: 49px;
+    height: 48px;
+    margin: 0 auto 27px;
+    background: url(//misc.360buyimg.com/user/myjd/safe/auth/rubik/2.0.34/css/i/associa-warn.png)
+}
+
+.association-wrap .asso-hint {
+    font-size: 16px;
+    color: #a5a5a5;
+    text-align: center;
+    line-height: 24px
+}
+
+.association-wrap .avatar-list {
+    margin: 20px 0;
+    font-size: 0;
+    text-align: center
+}
+
+.association-wrap .avatar-item {
+    display: inline-block;
+    width: 175px;
+    height: 92px;
+    margin: 0 0 10px 10px;
+    background: #f9f9f9;
+    font-size: 14px;
+    color: #a5a5a5;
+    text-align: center
+}
+
+.association-wrap .avatar-item:nth-child(3n+1) {
+    margin-right: 0
+}
+
+.association-wrap .avatar-img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 12px 0
+}
+
+.association-wrap .avatar-name {
+    display: block
+}
+
+.association-wrap .asso-tip {
+    width: 402px;
+    margin: 0 auto 20px;
+    font-size: 14px;
+    color: #a5a5a5;
+    text-align: center
+}
+
+.association-wrap .asso-opbtns {
+    width: 402px;
+    margin: 0 auto;
+    text-align: center
+}
+
+.association-wrap .asso-opbtns .btn-primary {
+    display: inline-block;
+    width: 162px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    background: #e2231a;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer
+}
+
+.association-wrap .asso-opbtns .btn-def {
+    display: inline-block;
+    width: 160px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    background: #fff;
+    font-size: 16px;
+    color: #333;
+    border: 1px solid #ddd;
+    cursor: pointer
+}
+
+.muti-account-wrap {
+    padding-top: 30px
+}
+
+.muti-account-wrap .tip-icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 20px;
+    background: url(//misc.360buyimg.com/user/myjd/safe/auth/rubik/2.0.34/css/i/associa-ico.png)
+}
+
+.muti-account-wrap .tip-title {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 19px
+}
+
+.muti-account-wrap .tip-hint {
+    margin-bottom: 32px;
+    font-size: 16px;
+    color: #a5a5a5
+}
+
+.muti-account-wrap .tip-btnbox .btn-def {
+    font-size: 18px;
+    color: #333;
+    border: 1px solid #ddd
+}
+
+.muti-account-wrap .tip-btnbox .desc {
+    font-size: 14px;
+    color: #bcbcbc;
+    display: block
+}
+
+.muti-account-wrap .tip-btnbox .btn-def:hover {
+    border: 1px solid #e2231a;
+    color: #e2231a
+}
+
+.muti-account-wrap .tip-btnbox .btn-def:hover .desc {
+    color: #e2231a
+}
+
+.muti-account-wrap .tip-btnbox .btn-xl {
+    height: 76px;
+    line-height: 24px
+}
+
+.checkMobileDialogBox .muti-hint {
+    color: #000;
+    line-height: 24px;
+    text-align: left;
+    font-size: 16px;
+    width: 360px;
+    margin: 0 auto
+}
+
+.form-wrap .cardid-item {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 35px
+}
+
+.form-wrap .cardid-item, .form-wrap .cardid-item .form-item {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle
+}
+
+.form-wrap .cardid-item .form-item {
+    min-width: unset;
+    min-height: unset;
+    margin-bottom: 0
+}
+
+.form-wrap .cardid-item .form-item .item-input-xl {
+    width: 38px;
+    height: 38px
+}
+
+.form-wrap .cardid-item .form-item .item-input-xl .field {
+    width: 40px;
+    padding: 10px 0;
+    text-align: center
+}
+
+.input-error {
+    clear: both;
+    color: #f83
+}
+
+.input-error .icon-warn {
+    font-size: 16px;
+    margin-right: 4px
+}

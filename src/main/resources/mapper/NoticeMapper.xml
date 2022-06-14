@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yang.mapper.NoticeMapper">
+    <!--分页模糊查询-->
+    <select id="findNoticeList" resultType="Notice">
+        select * from notice
+        <where>
+            <if test="title!=null and title!=''">
+                and title like concat('%',#{title},'%')
+            </if>
+        </where>
+    </select>
+
+    <!--发布公告-->
+    <insert id="addNotice">
+        insert into notice(title,content,addTime)
+        values (#{title},#{content},#{addTime})
+    </insert>
+
+    <!--修改公告-->
+    <update id="updateNotice">
+        update notice
+        <set>
+            <if test="title!=null and title!=''">
+                title=#{title},
+            </if>
+            <if test="content!=null and content!=''">
+                content=#{content},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--删除公告-->
+    <delete id="deleteById">
+        delete from notice where id=#{id}
+    </delete>
+
+    <!--查询最新发布的一条公告-->
+    <select id="findNewNotice" resultType="Notice">
+        select * from notice
+        order by addTime desc limit 0,1
+    </select>
+
+    <!--根据id查询一条公告-->
+    <select id="findNoticeById" resultType="Notice">
+        select * from notice where id=#{id}
+    </select>
+</mapper>

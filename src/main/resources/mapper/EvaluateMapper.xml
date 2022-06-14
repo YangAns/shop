@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yang.mapper.EvaluateMapper">
+    <resultMap type="com.yang.bean.Evaluate" id="ResultEvaluateMap">
+        <id property="id" column="id"/>
+        <result property="uid" column="uid"/>
+        <result property="gid" column="gid"/>
+        <result property="grade" column="grade"/>
+        <result property="content" column="content"/>
+        <result property="addTime" column="addTime"/>
+        <association property="user" column="uid"  select="com.yang.mapper.UserMapper.findUserById"/>
+        <association property="goods" column="gid" javaType="Goods" select="com.yang.mapper.GoodsMapper.findGoodsByIdEva"/>
+    </resultMap>
+
+    <select id="findEvaluateList" resultMap="ResultEvaluateMap">
+        select * from evaluate
+        <where>
+            <if test="uid!=null">
+                and uid like concat('%',#{uid},'%')
+            </if>
+        </where>
+    </select>
+
+    <!--前台用户发布评价-->
+    <insert id="addEvaluate">
+        insert into evaluate (uid,gid,grade,content,addTime)
+        values (#{uid},#{gid},#{grade},#{content},#{addTime});
+    </insert>
+
+    <!--根据商品id查询评价列表-->
+    <select id="listEvaluateByGid" resultMap="ResultEvaluateMap">
+        select * from evaluate where gid=#{id} order by id desc
+    </select>
+
+    <!--删除评价-->
+    <delete id="deleteById">
+        delete from evaluate where id=#{id}
+    </delete>
+
+    <!--查询总评价数量-->
+    <select id="findTotalEvaluate" resultType="int">
+        select count(1) num from `evaluate`
+    </select>
+</mapper>

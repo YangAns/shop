@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yang.mapper.UserMapper">
+
+    <!--前台用户注册-->
+    <insert id="addUser">
+        insert into `user`(userName,password,phone,realName,sex,address,email,pic)
+        values(#{userName},#{password},#{phone},#{realName},#{sex},#{address},#{email},#{pic});
+    </insert>
+    
+    <!--验证用户名是否重复-->
+    <select id="findUserByName" resultType="User">
+        select * from `user` where userName = #{userName} and status=1
+    </select>
+
+    <!--验证邮箱是否重复-->
+    <select id="findUserByEmail" resultType="User">
+        select * from `user` where email = #{email} and status=1
+    </select>
+
+    <!--前台用户登录-->
+    <select id="login" resultType="User">
+        select * from `user` where userName=#{userName} and password=#{password} and status=1
+    </select>
+
+    <!--查询用户列表-->
+    <select id="findUserList" resultType="User">
+        select * from `user`
+        <where>
+            <if test="userName!=null and userName!=''">
+                and userName like concat('%',#{userName},'%')
+            </if>
+            status >= 0
+        </where>
+    </select>
+    
+    <!--根据id查询一条用户-->
+    <select id="findUserById" resultType="User">
+        select * from `user` where id=#{id};
+    </select>
+
+    <!--前台用户修改-->
+    <update id="updateUser">
+        update `user`
+        <set>
+            <if test="userName!=null and userName!=''">
+                userName=#{userName},
+            </if>
+            <if test="realName!=null and realName!=''">
+                realName=#{realName},
+            </if>
+            <if test="sex!=null and sex!=''">
+                sex=#{sex},
+            </if>
+            <if test="phone!=null and phone!=''">
+                phone=#{phone},
+            </if>
+            <if test="email!=null and email!=''">
+                email=#{email},
+            </if>
+            <if test="address!=null and address!=''">
+                address=#{address},
+            </if>
+            <if test="password!=null and password!=''">
+                password=#{password},
+            </if>
+            <if test="pic!=null and pic!=''">
+                pic=#{pic}
+            </if>
+        </set>
+        where id=#{id}
+    </update>
+
+    <!--改变用户状态-->
+    <update id="changeUserStatus">
+        update `user` set status=#{status} where id=#{id}
+    </update>
+
+    <!--删除用户-->
+    <update id="deleteUserById">
+        update `user` set status=-1 where id=#{id}
+    </update>
+
+    <!--查询总用户数量-->
+    <select id="findTotalUser" resultType="int">
+        select count(*) num from `user`
+    </select>
+
+    <!--前台用户找回密码-->
+    <update id="updatePasswordByEmail">
+        update `user`set password=#{password} where email=#{email}
+    </update>
+
+    <!--查询用户头像-->
+    <select id="findUserPicById" resultType="User">
+        select pic from `user` where id = #{id}
+    </select>
+</mapper>

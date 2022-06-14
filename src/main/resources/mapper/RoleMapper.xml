@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yang.mapper.RoleMapper">
+    <!--查询角色列表-->
+    <select id="findRoleList" resultType="Role">
+        select * from role
+        <where>
+            <if test="roleName!=null and roleName!=''">
+                and roleName like concat('%',#{roleName},'%')
+            </if>
+        </where>
+    </select>
+
+    <!--添加角色-->
+    <insert id="addRole">
+        insert into role (rolename,roledesc) values(#{roleName},#{roleDesc})
+    </insert>
+
+    <!--删除角色-->
+    <delete id="deleteById">
+        delete from role where id = #{id}
+    </delete>
+
+    <!--修改角色-->
+    <update id="updateRole">
+        update `role`
+        <set>
+            <if test="roleName!=null and roleName!=''">
+                roleName=#{roleName},
+            </if>
+            <if test="roleDesc!=null and roleDesc!=''">
+                roleDesc=#{roleDesc},
+            </if>
+        </set>
+        where id=#{id}
+    </update>
+
+    <!-- 查询所有角色列表 -->
+    <select id="findRoleListByMap" resultType="map">
+        select * from role
+    </select>
+
+    <!-- 根据管理员ID查询该管理员拥有的角色列表 -->
+    <select id="findAdminRoleByAdminId" resultType="int">
+        select rid from admin_role where aid = #{AdminId}
+    </select>
+</mapper>

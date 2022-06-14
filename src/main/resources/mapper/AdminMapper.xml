@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yang.mapper.AdminMapper">
+    <!--管理员登录-->
+    <select id="login" resultType="Admin">
+        select * from admin where loginName=#{loginName} and password=#{password}
+    </select>
+
+    <!--查询管理员列表-->
+    <select id="findAdminList" resultType="Admin">
+        select * from admin
+        <where>
+            <if test="realName!=null and realName!=''">
+                and realName like concat('%',#{realName},'%')
+            </if>
+        </where>
+    </select>
+
+    <!--添加管理员-->
+    <insert id="addAdmin">
+        insert into admin (loginName,password,realName,phone,createDate,status)
+        values(#{loginName},#{password},#{realName},#{phone},#{createDate},#{status})
+    </insert>
+
+
+    <!--管理员修改-->
+    <update id="updateAdmin">
+        update `admin`
+        <set>
+            <if test="loginName!=null and loginName!=''">
+                loginName=#{loginName},
+            </if>
+            <if test="realName!=null and realName!=''">
+                realName=#{realName},
+            </if>
+            <if test="phone!=null and phone!=''">
+                phone=#{phone},
+            </if>
+            <if test="createDate!=null">
+                createDate=#{createDate},
+            </if>
+            <if test="status!=null">
+                status=#{status},
+            </if>
+        </set>
+        where id=#{id}
+    </update>
+
+    <update id="updateAdminPwd">
+        update `admin` set password=#{newPwd}   where id=#{id}
+    </update>
+
+    <!--根据角色id查询管理员数量 删除角色的时候进行验证-->
+    <select id="getAdminCountByRoleId" resultType="int">
+        select count(*) from admin a
+        inner join admin_role ar on a.id = ar.aid
+        where ar.rid = #{roleId}
+    </select>
+
+    <!--删除管理员-->
+    <delete id="deleteById">
+        delete from admin where id= #{id}
+    </delete>
+
+    <!--删除管理员和角色表的关系-->
+    <delete id="deleteAdminAndRole">
+        delete from admin_role where aid= #{aid}
+    </delete>
+
+    <!--根据登录名称查询数据-->
+    <select id="findAdminByLoginName" resultType="Admin">
+        select * from admin where loginName= #{loginName}
+    </select>
+
+    <!--根据管理员id查询管理员信息-->
+    <select id="findAdminById" resultType="Admin">
+        select * from admin where id= #{id}
+    </select>
+
+    <!--查询管理员人数-->
+    <select id="findTotalAdmin" resultType="int">
+        select count(1) num from `admin`
+    </select>
+</mapper>
