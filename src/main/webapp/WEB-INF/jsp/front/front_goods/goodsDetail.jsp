@@ -185,6 +185,7 @@
             <a href="javascript:void(0)" class="on">商品详情</a>
             <a href="javascript:void(0)">商品评价</a>
         </div>
+
         <div class="width100 hidden_yh">
             <div id="spDetail">
                 ${goods.details}
