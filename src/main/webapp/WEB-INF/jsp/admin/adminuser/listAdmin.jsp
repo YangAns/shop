@@ -158,7 +158,6 @@
             return false;
         });
 
-
         //监听头部工具栏事件
         table.on("toolbar(currentTableFilter)",function (obj) {
             switch (obj.event) {
@@ -193,7 +192,7 @@
             mainIndex = layer.open({
                 type: 1,//打开类型
                 title: "添加管理员",//窗口标题
-                area: ["800px", "400px"],//窗口宽高
+                area: ["600px", "400px"],//窗口宽高
                 content: $("#addOrUpdateWindow"),//引用的内容窗口
                 success: function () {
                     //清空表单数据

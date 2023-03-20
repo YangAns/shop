@@ -11,7 +11,7 @@ spring:
       suffix: .jsp
   mail:
     host: smtp.qq.com
-    username: 914405257@qq.com
+    username: xxxx@qq.com
     password: svlvabfwfsrobejc
     default-encoding: utf-8
     port: 465
