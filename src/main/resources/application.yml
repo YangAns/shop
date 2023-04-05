@@ -11,8 +11,8 @@ spring:
       suffix: .jsp
   mail:
     host: smtp.qq.com
-    username: xxxxx@qq.com
-    password: svlvabfwfsrobejc
+    username: xxxxx@qq.com  #改成自己的邮箱
+    password: svlvabfwfsrobejc #密码
     default-encoding: utf-8
     port: 465
     properties:
