@@ -47,7 +47,6 @@ server:
 pagehelper:
   reasonable: true
 
-
 #集成支付宝沙箱
 alipay:
   appId: 2021000119682537
