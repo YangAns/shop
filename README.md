@@ -1,2 +1,2 @@
 # shop
-基于springboot+layui 的数码商城项目
+基于springboot + layui的数码商城毕设项目 （供参考学习使用）
